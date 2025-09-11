@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: 3e46ecf0ea9c4164eb7554571bd39290
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1008775223110000901
+    second: Man_Character_Farming_Game_0
+  - first:
+      213: -7124593167239656034
+    second: Man_Character_Farming_Game_1
+  - first:
+      213: 4157064977510981155
+    second: Man_Character_Farming_Game_2
+  - first:
+      213: 1227564039729416817
+    second: Man_Character_Farming_Game_3
+  - first:
+      213: -3700648830591941128
+    second: Man_Character_Farming_Game_4
+  - first:
+      213: 522227091304462184
+    second: Man_Character_Farming_Game_5
+  - first:
+      213: -9206643413150234264
+    second: Man_Character_Farming_Game_6
+  - first:
+      213: -5133447690460509781
+    second: Man_Character_Farming_Game_7
+  - first:
+      213: -4047186442676649890
+    second: Man_Character_Farming_Game_8
+  - first:
+      213: 2748848340565614160
+    second: Man_Character_Farming_Game_9
+  - first:
+      213: 4254625892952601867
+    second: Man_Character_Farming_Game_10
+  - first:
+      213: -7712442360124346786
+    second: Man_Character_Farming_Game_11
+  - first:
+      213: -2602187408302155327
+    second: Man_Character_Farming_Game_12
+  - first:
+      213: 392114228650083012
+    second: Man_Character_Farming_Game_13
+  - first:
+      213: -5749277157162939307
+    second: Man_Character_Farming_Game_14
+  - first:
+      213: -177419115349131337
+    second: Man_Character_Farming_Game_15
+  - first:
+      213: 1230638574275909813
+    second: Man_Character_Farming_Game_16
+  - first:
+      213: -7928189493101617210
+    second: Man_Character_Farming_Game_17
+  - first:
+      213: -6808043887841086763
+    second: Man_Character_Farming_Game_18
+  - first:
+      213: -2296850250377351290
+    second: Man_Character_Farming_Game_19
+  - first:
+      213: -6808892183033647306
+    second: Man_Character_Farming_Game_20
+  - first:
+      213: -501478796319390985
+    second: Man_Character_Farming_Game_21
+  - first:
+      213: -3186655467756441412
+    second: Man_Character_Farming_Game_22
+  - first:
+      213: 1167167052132823042
+    second: Man_Character_Farming_Game_23
+  - first:
+      213: 5927998269315838389
+    second: Man_Character_Farming_Game_24
+  - first:
+      213: -3801555116581641212
+    second: Man_Character_Farming_Game_25
+  - first:
+      213: -4450666696818357385
+    second: Man_Character_Farming_Game_26
+  - first:
+      213: 2626699364409534857
+    second: Man_Character_Farming_Game_27
+  - first:
+      213: -2541092259198846957
+    second: Man_Character_Farming_Game_28
+  - first:
+      213: -7637959021860139470
+    second: Man_Character_Farming_Game_29
+  - first:
+      213: 5742376912198068057
+    second: Man_Character_Farming_Game_30
+  - first:
+      213: 2982213265606630034
+    second: Man_Character_Farming_Game_31
+  - first:
+      213: -5453793753500442707
+    second: Man_Character_Farming_Game_32
+  - first:
+      213: -2269150093287892712
+    second: Man_Character_Farming_Game_33
+  - first:
+      213: 9223191428399996667
+    second: Man_Character_Farming_Game_34
+  - first:
+      213: -3326691803334676631
+    second: Man_Character_Farming_Game_35
+  - first:
+      213: -3596431329366086872
+    second: Man_Character_Farming_Game_36
+  - first:
+      213: 884522450368177010
+    second: Man_Character_Farming_Game_37
+  - first:
+      213: -7073407867370535651
+    second: Man_Character_Farming_Game_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 2658
+        width: 197
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501efaf78b3effd00800000000000000
+      internalID: 1008775223110000901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_1
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2658
+        width: 197
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d4189134c502d90800000000000000
+      internalID: -7124593167239656034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_2
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 2660
+        width: 197
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e52cc629cd0b930800000000000000
+      internalID: 4157064977510981155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_3
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2658
+        width: 197
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a8d1f7dfe290110800000000000000
+      internalID: 1227564039729416817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_4
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 2681
+        width: 196
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f54a16de77a4acc0800000000000000
+      internalID: -3700648830591941128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_5
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 2681
+        width: 196
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867b94dc5c25f3700800000000000000
+      internalID: 522227091304462184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_6
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 2682
+        width: 196
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8698d79389e6b3080800000000000000
+      internalID: -9206643413150234264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2170
+        width: 196
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba94d01168452c8b0800000000000000
+      internalID: -5133447690460509781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_8
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 2164
+        width: 196
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e504b709f5185d7c0800000000000000
+      internalID: -4047186442676649890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2162
+        width: 196
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ed5d0700fd52620800000000000000
+      internalID: 2748848340565614160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_10
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 2163
+        width: 196
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b057e9925b77b0b30800000000000000
+      internalID: 4254625892952601867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_11
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 2173
+        width: 196
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5eec162986e7f490800000000000000
+      internalID: -7712442360124346786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_12
+      rect:
+        serializedVersion: 2
+        x: 2755
+        y: 2170
+        width: 184
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9d721d65c23ebd0800000000000000
+      internalID: -2602187408302155327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_13
+      rect:
+        serializedVersion: 2
+        x: 3283
+        y: 2170
+        width: 184
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2801e30d1117500800000000000000
+      internalID: 392114228650083012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1651
+        width: 184
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c0904f2e67630b0800000000000000
+      internalID: -5749277157162939307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_15
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1651
+        width: 184
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf304d214ea98df0800000000000000
+      internalID: -177419115349131337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_16
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 1654
+        width: 184
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8db9a534b141110800000000000000
+      internalID: 1230638574275909813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_17
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 1620
+        width: 197
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf91bf49a969f190800000000000000
+      internalID: -7928189493101617210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_18
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 1620
+        width: 197
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d276f19728f481a0800000000000000
+      internalID: -6808043887841086763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_19
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 1643
+        width: 254
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fadf3ddd2ff10e0800000000000000
+      internalID: -2296850250377351290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_20
+      rect:
+        serializedVersion: 2
+        x: 3209
+        y: 1643
+        width: 251
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f685472a4f181a0800000000000000
+      internalID: -6808892183033647306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_21
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1124
+        width: 254
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f20ef211b36a09f0800000000000000
+      internalID: -501478796319390985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_22
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1124
+        width: 251
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb032d65cb9b6c3d0800000000000000
+      internalID: -3186655467756441412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_23
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1101
+        width: 197
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200baefff3c923010800000000000000
+      internalID: 1167167052132823042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_24
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1053
+        width: 197
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b173bf940b744250800000000000000
+      internalID: 5927998269315838389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_25
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 1124
+        width: 237
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404251253c92e3bc0800000000000000
+      internalID: -3801555116581641212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_26
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 1157
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b0b7a483e0c32c0800000000000000
+      internalID: -4450666696818357385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_27
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 1144
+        width: 374
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989ef53b729e37420800000000000000
+      internalID: 2626699364409534857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_28
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 1127
+        width: 237
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31835f4bd0a3cbcd0800000000000000
+      internalID: -2541092259198846957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 625
+        width: 374
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e490dbcb4800690800000000000000
+      internalID: -7637959021860139470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_30
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 638
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95768f1906501bf40800000000000000
+      internalID: 5742376912198068057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_31
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 618
+        width: 184
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ad0f42a23f26920800000000000000
+      internalID: 2982213265606630034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_32
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 527
+        width: 184
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf9c540a7b3054b0800000000000000
+      internalID: -5453793753500442707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_33
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 582
+        width: 197
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819d78b330c5280e0800000000000000
+      internalID: -2269150093287892712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_34
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 572
+        width: 197
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe9531dcbb5fff70800000000000000
+      internalID: 9223191428399996667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_35
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 605
+        width: 242
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f68013e6735d1d0800000000000000
+      internalID: -3326691803334676631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_36
+      rect:
+        serializedVersion: 2
+        x: 3223
+        y: 595
+        width: 237
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b6c0ab2c8e61ec0800000000000000
+      internalID: -3596431329366086872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_37
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 86
+        width: 242
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273ad027b74764c00800000000000000
+      internalID: 884522450368177010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Man_Character_Farming_Game_38
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 76
+        width: 237
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d150de9650536dd90800000000000000
+      internalID: -7073407867370535651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Man_Character_Farming_Game_0: 1008775223110000901
+      Man_Character_Farming_Game_1: -7124593167239656034
+      Man_Character_Farming_Game_10: 4254625892952601867
+      Man_Character_Farming_Game_11: -7712442360124346786
+      Man_Character_Farming_Game_12: -2602187408302155327
+      Man_Character_Farming_Game_13: 392114228650083012
+      Man_Character_Farming_Game_14: -5749277157162939307
+      Man_Character_Farming_Game_15: -177419115349131337
+      Man_Character_Farming_Game_16: 1230638574275909813
+      Man_Character_Farming_Game_17: -7928189493101617210
+      Man_Character_Farming_Game_18: -6808043887841086763
+      Man_Character_Farming_Game_19: -2296850250377351290
+      Man_Character_Farming_Game_2: 4157064977510981155
+      Man_Character_Farming_Game_20: -6808892183033647306
+      Man_Character_Farming_Game_21: -501478796319390985
+      Man_Character_Farming_Game_22: -3186655467756441412
+      Man_Character_Farming_Game_23: 1167167052132823042
+      Man_Character_Farming_Game_24: 5927998269315838389
+      Man_Character_Farming_Game_25: -3801555116581641212
+      Man_Character_Farming_Game_26: -4450666696818357385
+      Man_Character_Farming_Game_27: 2626699364409534857
+      Man_Character_Farming_Game_28: -2541092259198846957
+      Man_Character_Farming_Game_29: -7637959021860139470
+      Man_Character_Farming_Game_3: 1227564039729416817
+      Man_Character_Farming_Game_30: 5742376912198068057
+      Man_Character_Farming_Game_31: 2982213265606630034
+      Man_Character_Farming_Game_32: -5453793753500442707
+      Man_Character_Farming_Game_33: -2269150093287892712
+      Man_Character_Farming_Game_34: 9223191428399996667
+      Man_Character_Farming_Game_35: -3326691803334676631
+      Man_Character_Farming_Game_36: -3596431329366086872
+      Man_Character_Farming_Game_37: 884522450368177010
+      Man_Character_Farming_Game_38: -7073407867370535651
+      Man_Character_Farming_Game_4: -3700648830591941128
+      Man_Character_Farming_Game_5: 522227091304462184
+      Man_Character_Farming_Game_6: -9206643413150234264
+      Man_Character_Farming_Game_7: -5133447690460509781
+      Man_Character_Farming_Game_8: -4047186442676649890
+      Man_Character_Farming_Game_9: 2748848340565614160
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 9be0bb3d88d7b434ab893d91835dc1ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4629333606931723490
+    second: Market Canopies_0
+  - first:
+      213: 2717667463039838788
+    second: Market Canopies_1
+  - first:
+      213: -1072253005016797345
+    second: Market Canopies_2
+  - first:
+      213: -5146171012345234358
+    second: Market Canopies_3
+  - first:
+      213: 1900581326452348840
+    second: Market Canopies_4
+  - first:
+      213: -4916094819318430193
+    second: Market Canopies_5
+  - first:
+      213: -140647540589527456
+    second: Market Canopies_6
+  - first:
+      213: -1471889275162868816
+    second: Market Canopies_7
+  - first:
+      213: -3304167769904888075
+    second: Market Canopies_8
+  - first:
+      213: -5418099880482866770
+    second: Market Canopies_9
+  - first:
+      213: 1910689579576579210
+    second: Market Canopies_10
+  - first:
+      213: -7569795300687883213
+    second: Market Canopies_11
+  - first:
+      213: 8926858617557892410
+    second: Market Canopies_12
+  - first:
+      213: 7211424603372632501
+    second: Market Canopies_13
+  - first:
+      213: 6550830549620719338
+    second: Market Canopies_14
+  - first:
+      213: -4924922089879952144
+    second: Market Canopies_15
+  - first:
+      213: 3862762038850872920
+    second: Market Canopies_16
+  - first:
+      213: -8450182649080187811
+    second: Market Canopies_17
+  - first:
+      213: -8203510450324463916
+    second: Market Canopies_18
+  - first:
+      213: -7719941240231312010
+    second: Market Canopies_19
+  - first:
+      213: 5273008256794605136
+    second: Market Canopies_20
+  - first:
+      213: -3637980401267697806
+    second: Market Canopies_21
+  - first:
+      213: -6390526741030518210
+    second: Market Canopies_22
+  - first:
+      213: -5464169139580052882
+    second: Market Canopies_23
+  - first:
+      213: -9013859450731924205
+    second: Market Canopies_24
+  - first:
+      213: 3890788680673478926
+    second: Market Canopies_25
+  - first:
+      213: 1475381968203387318
+    second: Market Canopies_26
+  - first:
+      213: 1996279701900325024
+    second: Market Canopies_27
+  - first:
+      213: -2787894371410725835
+    second: Market Canopies_28
+  - first:
+      213: -1847672798900063974
+    second: Market Canopies_29
+  - first:
+      213: -943065756423993382
+    second: Market Canopies_30
+  - first:
+      213: -8314958082144231513
+    second: Market Canopies_31
+  - first:
+      213: 8763174677937982301
+    second: Market Canopies_32
+  - first:
+      213: -1440690660131746833
+    second: Market Canopies_33
+  - first:
+      213: 8646590979319839954
+    second: Market Canopies_34
+  - first:
+      213: 5210602203565926705
+    second: Market Canopies_35
+  - first:
+      213: -1316968678353434102
+    second: Market Canopies_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Market Canopies_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 569
+        width: 97
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e471f36362be3040800000000000000
+      internalID: 4629333606931723490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 639
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a6028a82817b520800000000000000
+      internalID: 2717667463039838788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 639
+        width: 98
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fe0aea2979e11f0800000000000000
+      internalID: -1072253005016797345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 569
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4cffb7dab02598b0800000000000000
+      internalID: -5146171012345234358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 639
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7deed85a8306a10800000000000000
+      internalID: 1900581326452348840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 569
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f060364fec586cbb0800000000000000
+      internalID: -4916094819318430193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_6
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 569
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ef0a89ec15c0ef0800000000000000
+      internalID: -140647540589527456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 489
+        width: 97
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3c53da08cc29be0800000000000000
+      internalID: -1471889275162868816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 489
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f646846bec3522d0800000000000000
+      internalID: -3304167769904888075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_9
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 489
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea97b327dda0fc4b0800000000000000
+      internalID: -5418099880482866770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_10
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 489
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84d3b2ac02248a10800000000000000
+      internalID: 1910689579576579210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 409
+        width: 97
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334d310d74fa2f690800000000000000
+      internalID: -7569795300687883213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_12
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 409
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d3cabbd9292eb70800000000000000
+      internalID: 8926858617557892410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_13
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 409
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9b9801870241460800000000000000
+      internalID: 7211424603372632501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_14
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 409
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee7be55da939ea50800000000000000
+      internalID: 6550830549620719338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 329
+        width: 97
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f42b3ed37927abb0800000000000000
+      internalID: -4924922089879952144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 329
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856e199cb994b9530800000000000000
+      internalID: 3862762038850872920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_17
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 329
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54f762d6abeaba80800000000000000
+      internalID: -8450182649080187811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_18
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 329
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de9431a5b6472e80800000000000000
+      internalID: -8203510450324463916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 249
+        width: 97
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675cf1118524dd490800000000000000
+      internalID: -7719941240231312010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_20
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 249
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056b1fb621d7d2940800000000000000
+      internalID: 5273008256794605136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 249
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2771b92991c438dc0800000000000000
+      internalID: -3637980401267697806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_22
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 249
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32cd3999c94057a0800000000000000
+      internalID: -6390526741030518210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 49
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6adda23e1f5b24b0800000000000000
+      internalID: -5464169139580052882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_24
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 169
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31573d7469658e280800000000000000
+      internalID: -9013859450731924205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_25
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 218
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0947a7d0bbdef530800000000000000
+      internalID: 3890788680673478926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_26
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 169
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b197ca451c997410800000000000000
+      internalID: 1475381968203387318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 49
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a07718efc534bb10800000000000000
+      internalID: 1996279701900325024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_28
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 186
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534b0c017d86f49d0800000000000000
+      internalID: -2787894371410725835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11f868f06fbb56e0800000000000000
+      internalID: -1847672798900063974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 89
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7438ce0be89e2f0800000000000000
+      internalID: -943065756423993382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_31
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 152
+        width: 50
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af9787cda55b9c80800000000000000
+      internalID: -8314958082144231513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_32
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 89
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b0137b0fc0d9970800000000000000
+      internalID: 8763174677937982301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_33
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 122
+        width: 58
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febcf9b4a73a10ce0800000000000000
+      internalID: -1440690660131746833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_34
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 122
+        width: 58
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dcb4702facdef770800000000000000
+      internalID: 8646590979319839954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_35
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 9
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1392a61e817cf4840800000000000000
+      internalID: 5210602203565926705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Market Canopies_36
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 9
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a8d62f6ff29bde0800000000000000
+      internalID: -1316968678353434102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Market Canopies_0: 4629333606931723490
+      Market Canopies_1: 2717667463039838788
+      Market Canopies_10: 1910689579576579210
+      Market Canopies_11: -7569795300687883213
+      Market Canopies_12: 8926858617557892410
+      Market Canopies_13: 7211424603372632501
+      Market Canopies_14: 6550830549620719338
+      Market Canopies_15: -4924922089879952144
+      Market Canopies_16: 3862762038850872920
+      Market Canopies_17: -8450182649080187811
+      Market Canopies_18: -8203510450324463916
+      Market Canopies_19: -7719941240231312010
+      Market Canopies_2: -1072253005016797345
+      Market Canopies_20: 5273008256794605136
+      Market Canopies_21: -3637980401267697806
+      Market Canopies_22: -6390526741030518210
+      Market Canopies_23: -5464169139580052882
+      Market Canopies_24: -9013859450731924205
+      Market Canopies_25: 3890788680673478926
+      Market Canopies_26: 1475381968203387318
+      Market Canopies_27: 1996279701900325024
+      Market Canopies_28: -2787894371410725835
+      Market Canopies_29: -1847672798900063974
+      Market Canopies_3: -5146171012345234358
+      Market Canopies_30: -943065756423993382
+      Market Canopies_31: -8314958082144231513
+      Market Canopies_32: 8763174677937982301
+      Market Canopies_33: -1440690660131746833
+      Market Canopies_34: 8646590979319839954
+      Market Canopies_35: 5210602203565926705
+      Market Canopies_36: -1316968678353434102
+      Market Canopies_4: 1900581326452348840
+      Market Canopies_5: -4916094819318430193
+      Market Canopies_6: -140647540589527456
+      Market Canopies_7: -1471889275162868816
+      Market Canopies_8: -3304167769904888075
+      Market Canopies_9: -5418099880482866770
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
