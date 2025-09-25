@@ -32,7 +32,7 @@ public class MineableRock : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            ObjectSaveManager.instance.MarkObjectDestroyed(uniqueID);
+            //ObjectSaveManager.instance.MarkObjectDestroyed(uniqueID);
 
             //if (ObjectSaveManager.instance != null && ObjectSaveManager.instance.IsRemoved(uniqueID))
             //{
@@ -43,6 +43,11 @@ public class MineableRock : MonoBehaviour
             if (dropPrefab != null && dropPoint != null)
             {
                 Instantiate(dropPrefab, dropPoint.position, Quaternion.identity);
+            }
+              if (QuestManager.Instance != null)
+            {
+                // ส่งชื่อ "Stone" ไปให้ QuestManager เพื่ออัปเดตความคืบหน้า
+                QuestManager.Instance.UpdateQuestProgress("Stone");
             }
 
             Destroy(gameObject);

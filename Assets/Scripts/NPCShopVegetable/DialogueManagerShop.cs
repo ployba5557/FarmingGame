@@ -14,6 +14,9 @@ public class DialogueManagerShop : MonoBehaviour
     public GameObject choicePanel;
     public Button yesButton;
     public Button noButton;
+    public Image npcImage; // ✅ เพิ่มตัวนี้
+    public TMP_Text npcName; // ✅ เพิ่มตัวนี้
+
 
     [Header("Dialogue Logic")]
     private string[] dialogueLines;
@@ -41,12 +44,17 @@ public class DialogueManagerShop : MonoBehaviour
         noButton.onClick.AddListener(OnNoButtonClick);
     }
 
-    public void StartDialogue(string[] lines)
+    public void StartDialogue(string[] lines, string npcNameString, Sprite npcSprite)
     {
         dialogueLines = lines;
         currentLineIndex = 0;
         dialoguePanel.SetActive(true);
         choicePanel.SetActive(false);
+
+        // ✅ อัปเดต UI ด้วยชื่อและรูปภาพของ NPC ที่ส่งเข้ามา
+        npcName.text = npcNameString;
+        npcImage.sprite = npcSprite;
+
         StartCoroutine(TypeDialogue());
     }
 

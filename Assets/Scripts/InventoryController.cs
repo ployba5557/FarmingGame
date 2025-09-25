@@ -8,28 +8,29 @@ public class InventoryController : MonoBehaviour
     public GameObject inventoryScreen; 
     public GameObject inventory2;      
     public GameObject otherPanel;
-   
+
 
     public void OpenClose()
-   {
-        if(UIController.instance.theShop.gameObject.activeSelf == false)
-        {
-           if (gameObject.activeSelf == false)
-           {
-                gameObject.SetActive(true);
+    {
+        // ตรวจสอบว่าหน้าต่างร้านค้า (ร้านผัก) หรือร้านปลาเปิดอยู่หรือไม่
+        bool shopOpen = UIController.instance.theShop != null && UIController.instance.theShop.gameObject.activeSelf;
+        bool fishShopOpen = UIController.instance.theShopFish != null && UIController.instance.theShopFish.gameObject.activeSelf;
 
-                UpdateDisplay();
-           }
-           else
-           {
-                gameObject.SetActive(false); 
-           } 
-        
+        // ถ้าหน้าต่างร้านค้าใดๆ เปิดอยู่ จะไม่อนุญาตให้เปิด Inventory
+        if (shopOpen || fishShopOpen)
+        {
+            return;
         }
 
-        
-   }
+        // สลับสถานะของ GameObject Inventory
+        gameObject.SetActive(!gameObject.activeSelf);
 
+        // ถ้าเปิดขึ้นมาแล้ว ให้เรียก UpdateDisplay
+        if (gameObject.activeSelf)
+        {
+            UpdateDisplay();
+        }
+    }
     public void UpdateDisplay()
     {
         foreach(SeedDisplay seed in seeds)

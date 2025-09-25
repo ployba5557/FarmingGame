@@ -141,6 +141,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +548,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Market Signs_0: 8430235193750375849
+      Market Signs_1: -5289355865464166981
+      Market Signs_10: 7333056381709903477
+      Market Signs_11: -4396830523694156569
+      Market Signs_12: 609277845411293033
+      Market Signs_13: -9222084710986099864
+      Market Signs_14: -6199808794899233000
+      Market Signs_15: 5288490873683793299
+      Market Signs_2: 4971350756512907746
+      Market Signs_3: 5752940433021091295
+      Market Signs_4: -6238304779417985003
+      Market Signs_5: 6287459843667413640
+      Market Signs_6: -4444374933984470642
+      Market Signs_7: 5319826869338262126
+      Market Signs_8: 718671142217770915
+      Market Signs_9: 5469468877504361111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

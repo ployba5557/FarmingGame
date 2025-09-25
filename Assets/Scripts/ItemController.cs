@@ -35,4 +35,5 @@ public class ItemController : MonoBehaviour
     {
         return allItems.Find(i => i.itemName == itemName);
     }
+
 }
