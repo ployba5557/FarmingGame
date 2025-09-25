@@ -42,11 +42,13 @@ public class ChoppableTree : MonoBehaviour
             // สร้างขอนไม้
             if (logPrefab != null && dropPoint != null)
             {
-                Instantiate(logPrefab, dropPoint.position, Quaternion.identity); 
+                Instantiate(logPrefab, dropPoint.position, Quaternion.identity);
+                
             }
 
             // ทำลาย GameObject ของต้นไม้
             Destroy(gameObject);
+            
         }
     }
 }
