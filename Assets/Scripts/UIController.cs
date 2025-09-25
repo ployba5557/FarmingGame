@@ -22,7 +22,7 @@ public class UIController : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
             
-            Instantiate(gameObject);
+           
         }
 
     }
@@ -34,6 +34,8 @@ public class UIController : MonoBehaviour
 
     public InventoryController theIC;
     public ShopController theShop;
+    public ShopFishController theShopFish;
+    public ShopToolController theShopTool;
 
     public Image seedImage;
 

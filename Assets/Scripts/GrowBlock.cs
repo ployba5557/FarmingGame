@@ -172,6 +172,13 @@ public class GrowBlock : MonoBehaviour
     {
         if(currentStage == GrowthStage.ripe && preventUse == false)
         {
+            if (QuestManager.Instance != null)
+            {
+                // แปลง enum CropType เป็น string สำหรับอัปเดตเควส
+                string cropName = cropType.ToString();
+                QuestManager.Instance.UpdateQuestProgress(cropName);
+            }
+
             currentStage = GrowthStage.ploughed;
             
             SetSoilSprite();

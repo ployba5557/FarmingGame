@@ -35,7 +35,14 @@ public class FishingSpotObject : MonoBehaviour
         if (dropFishPrefab != null && dropPoint != null)
         {
             Instantiate(dropFishPrefab, dropPoint.position, Quaternion.identity);
+
+              if (QuestManager.Instance != null)
+            {
+                // ✅ แก้ไขตรงนี้ให้ส่งชื่อ "Fish" ไปโดยตรง
+                QuestManager.Instance.UpdateQuestProgress("Fish");
+            }
         }
+            
 
         Destroy(gameObject); // ← อันนี้ "ให้เปิดไว้" ถ้าอยากให้หายหลังตกปลา
     }

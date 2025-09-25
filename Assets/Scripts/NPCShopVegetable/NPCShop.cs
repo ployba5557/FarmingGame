@@ -5,7 +5,8 @@ public class NPCShop : MonoBehaviour
 {
     [Header("Dialogue and Shop")]
     public string[] dialogue;
-
+    public string npcName = "Vegetable Seller"; // ✅ เพิ่มตัวนี้
+    public Sprite npcSprite; // ✅ เพิ่มตัวนี้
     private bool playerClose;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -28,11 +29,11 @@ public class NPCShop : MonoBehaviour
     {
         if (playerClose && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            // เปลี่ยน DialogueManager.instance เป็น DialogueManagerShop.instance
             DialogueManagerShop.instance.OnYesSelected -= OnYesSelected;
             DialogueManagerShop.instance.OnYesSelected += OnYesSelected;
 
-            DialogueManagerShop.instance.StartDialogue(dialogue);
+            // ✅ ส่งชื่อและรูปภาพของ NPC นี้ไปให้ DialogueManagerShop
+            DialogueManagerShop.instance.StartDialogue(dialogue, npcName, npcSprite);
         }
     }
 

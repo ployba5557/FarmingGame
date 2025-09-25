@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Indoors.unity
     guid: 0485f240949d4ea43acdb0a67f19d520
   - enabled: 1
-    path: Assets/Scenes/Indoors-Copy.unity
+    path: "Assets/Scenes/\u0E2B\u0E2D\u0E14\u0E39\u0E14\u0E32\u0E27.unity"
     guid: 38a819c6d3eb83e458164ab609dd23e7
   - enabled: 1
     path: Assets/Scenes/Day End.unity
