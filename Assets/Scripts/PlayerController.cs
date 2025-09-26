@@ -35,7 +35,8 @@ public class PlayerController : MonoBehaviour
         basket,
         chopping,
         mining,
-        fishing
+        fishing,
+        gathering
     }
     public ToolType currentTool;
 
@@ -165,6 +166,11 @@ public class PlayerController : MonoBehaviour
         GrowBlock block = GridController.instance.GetBlock(toolIndicator.position.x - .5f, toolIndicator.position.y - .5f);
         toolWaitCounter = toolWaitTime;
 
+        // ไม่ว่า block จะเป็น null หรือไม่ เรายังคงต้องการตรวจสอบการใช้เครื่องมือกับวัตถุอื่นๆ
+        // เราจึงไม่ใส่ if (block != null) รอบ switch ทั้งหมด
+        
+        // แต่ถ้าโค้ดเดิมของคุณต้องการตรวจสอบ block != null ก่อนเข้า switch 
+        // ให้ใช้โครงสร้างนี้แทน (อ้างอิงจากโค้ดที่คุณให้มา)
         if (block != null)
         {
             switch (currentTool)
@@ -188,8 +194,31 @@ public class PlayerController : MonoBehaviour
                     }
                     break;
                 case ToolType.basket:
-                    block.HarvestCrop();
-                    break;
+    // 1. ตรวจสอบการเก็บพืชผลบนพื้นดิน (ถ้ามี)
+    block.HarvestCrop(); 
+    
+    // 2. ตรวจสอบการเก็บเห็ด/วัตถุที่สามารถเก็บได้อื่นๆ
+    
+    // กำหนด Layer Mask สำหรับวัตถุที่เก็บได้ (Gatherable)
+    int gatherableLayerMask = 1 << LayerMask.NameToLayer("spot"); 
+    float overlapRadius = 0.1f;
+
+    Collider2D mushroomSpot = Physics2D.OverlapCircle(toolIndicator.position, overlapRadius, gatherableLayerMask);
+
+    if (mushroomSpot != null && mushroomSpot.CompareTag("Mushroom"))
+    {
+        GatherableMushroom mushroom = mushroomSpot.GetComponent<GatherableMushroom>();
+        if (mushroom != null)
+        {
+            // ตรวจสอบและใช้พลังงาน *เฉพาะเมื่อเจอเห็ด*
+            if (!EnergyController.instance.HasEnoughEnergy(energyUse_PerAction)) return;
+            EnergyController.instance.UseEnergy(energyUse_PerAction); 
+            
+            mushroom.Gather(); // เรียกใช้เมธอดเก็บเห็ด
+            //anim.SetTrigger("useBasket"); // ตั้งค่า Animation
+        }
+    }
+    break;
 
                 case ToolType.chopping:
                     if (!EnergyController.instance.HasEnoughEnergy(energyUse_PerAction)) return;
@@ -206,10 +235,19 @@ public class PlayerController : MonoBehaviour
                         }
                     }
                     break;
+                
+                // ----------------------------------------------------
+                // *** โค้ดสำหรับ MINING ที่แก้ไขแล้ว ***
+                // *** สำคัญ: ต้องแน่ใจว่าได้สร้าง Layer "Mineable" ใน Unity แล้ว ***
+                // ----------------------------------------------------
                 case ToolType.mining:
                     if (!EnergyController.instance.HasEnoughEnergy(energyUse_PerAction)) return;
                     EnergyController.instance.UseEnergy(energyUse_PerAction);
-                    Collider2D rock = Physics2D.OverlapPoint(toolIndicator.position);
+
+                    int mineableLayerMask = 1 << LayerMask.NameToLayer("spot"); 
+                    float miningOverlapRadius = 0.1f;
+
+                    Collider2D rock = Physics2D.OverlapCircle(toolIndicator.position, miningOverlapRadius, mineableLayerMask);
 
                     if (rock != null && rock.CompareTag("Stone"))
                     {
@@ -220,11 +258,21 @@ public class PlayerController : MonoBehaviour
                             anim.SetTrigger("useChop");
                         }
                     }
+                    // ลบ Debug.Log ออกเพื่อความสะอาด
                     break;
+                    
+                // ----------------------------------------------------
+                // *** โค้ดสำหรับ FISHING ที่แก้ไขแล้ว ***
+                // *** สำคัญ: ต้องแน่ใจว่าจุดตกปลาอยู่ใน Layer "spot" แล้ว ***
+                // ----------------------------------------------------
                 case ToolType.fishing:
                     if (!EnergyController.instance.HasEnoughEnergy(energyUse_PerAction)) return;
                     EnergyController.instance.UseEnergy(energyUse_PerAction);
-                    Collider2D fishSpot = Physics2D.OverlapPoint(toolIndicator.position);
+
+                    int fishLayerMask = 1 << LayerMask.NameToLayer("spot"); 
+                    float fishingOverlapRadius = 0.1f;
+
+                    Collider2D fishSpot = Physics2D.OverlapCircle(toolIndicator.position, fishingOverlapRadius, fishLayerMask);
 
                     if (fishSpot != null && fishSpot.CompareTag("Fish"))
                     {
@@ -232,17 +280,14 @@ public class PlayerController : MonoBehaviour
                         if (fishable != null)
                         {
                             fishable.Fish();
-                            anim.SetTrigger("useFishing"); // ใช้ท่าทางเดียวกับตัดไม้/ขุดหิน
+                            anim.SetTrigger("useFishing");
                         }
                     }
+                    // ลบ Debug.Log ออกเพื่อความสะอาด
                     break;
-
-
-
-            }
-        }
-    }
-
+            } // ปิด switch
+        } // ปิด if (block != null) 
+    } // ปิด UseTool()
     void UpdateToolIndicator()
     {
         toolIndicator.position = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());

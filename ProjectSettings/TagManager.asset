@@ -9,6 +9,7 @@ TagManager:
   - Fish
   - NPC
   - Shop
+  - Mushroom
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - UI
   - World Objects
   - Grid Blockers
-  - 
+  - spot
   - 
   - 
   - 
@@ -66,6 +67,9 @@ TagManager:
     locked: 0
   - name: instance
     uniqueID: 1387400387
+    locked: 0
+  - name: New Layer 8
+    uniqueID: 716876965
     locked: 0
   m_RenderingLayers:
   - Default

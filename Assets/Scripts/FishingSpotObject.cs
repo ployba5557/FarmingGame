@@ -19,14 +19,21 @@ public class FishingSpotObject : MonoBehaviour
 
     public void Fish() 
     {
-        if (anim != null)
-        {
-            anim.SetTrigger("useFishing");
-        }
+         Debug.Log("Fishing at: " + uniqueID);
 
-        float waitTime = Random.Range(1f, 10f); // สุ่มความยากของปลา
-        Invoke("FinishFishing", waitTime);     // เรียกเมธอด FinishFishing หลังเวลาที่สุ่มได้
+    if (anim != null)
+    {
+        anim.SetTrigger("useFishing");
     }
+    else
+    {
+        Debug.LogWarning("No Animator on: " + uniqueID);
+    }
+
+    float waitTime = Random.Range(1f, 10f);
+    Debug.Log("WaitTime: " + waitTime);
+    Invoke("FinishFishing", waitTime);
+}
 
     void FinishFishing()
     {

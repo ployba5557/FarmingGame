@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 59ada6a592c3c2c4b970ce9642aa97f9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shopManagerMushroom: {instanceID: 0}
+  - npcSprite: {fileID: -4824647314041769873, guid: c07d0ad20eab9ae44975f240a7ab03d4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
