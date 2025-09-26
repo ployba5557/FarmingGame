@@ -482,6 +482,7 @@ SpriteAtlas:
     - 5fb13c52b441caa4f8ca8bef286ed746: 709112843
     - 5fb13c52b441caa4f8ca8bef286ed746: -819370572
     - 8298ab725cafa93429a58bd3e8273289: 21300000
+    - c07d0ad20eab9ae44975f240a7ab03d4: -4824647314041769873
     - 629312031efaf9d4293e00dc3bd4a30a: -1621745841
     - 629312031efaf9d4293e00dc3bd4a30a: -972845333
     - 629312031efaf9d4293e00dc3bd4a30a: 1608797584
@@ -547,6 +548,7 @@ SpriteAtlas:
     - 629312031efaf9d4293e00dc3bd4a30a: -1075255539
     - 629312031efaf9d4293e00dc3bd4a30a: -7945253563437251681
     - 081b5033ea188cb48b5d44b99ab920bc: 21300000
+    - 4274f0335f56eb5479c0aa696c7fb6b8: -746312480162145863
     - 1c3f5b4373a98cf4abe93c6cf89c6dcc: -404942766
     - 1c3f5b4373a98cf4abe93c6cf89c6dcc: -1689222939
     - 1c3f5b4373a98cf4abe93c6cf89c6dcc: -620044607
@@ -3401,6 +3403,7 @@ SpriteAtlas:
   - {fileID: 709112843, guid: 5fb13c52b441caa4f8ca8bef286ed746, type: 3}
   - {fileID: -819370572, guid: 5fb13c52b441caa4f8ca8bef286ed746, type: 3}
   - {fileID: 21300000, guid: 8298ab725cafa93429a58bd3e8273289, type: 3}
+  - {fileID: -4824647314041769873, guid: c07d0ad20eab9ae44975f240a7ab03d4, type: 3}
   - {fileID: -1621745841, guid: 629312031efaf9d4293e00dc3bd4a30a, type: 3}
   - {fileID: -972845333, guid: 629312031efaf9d4293e00dc3bd4a30a, type: 3}
   - {fileID: 1608797584, guid: 629312031efaf9d4293e00dc3bd4a30a, type: 3}
@@ -3466,6 +3469,7 @@ SpriteAtlas:
   - {fileID: -1075255539, guid: 629312031efaf9d4293e00dc3bd4a30a, type: 3}
   - {fileID: -7945253563437251681, guid: 629312031efaf9d4293e00dc3bd4a30a, type: 3}
   - {fileID: 21300000, guid: 081b5033ea188cb48b5d44b99ab920bc, type: 3}
+  - {fileID: -746312480162145863, guid: 4274f0335f56eb5479c0aa696c7fb6b8, type: 3}
   - {fileID: -404942766, guid: 1c3f5b4373a98cf4abe93c6cf89c6dcc, type: 3}
   - {fileID: -1689222939, guid: 1c3f5b4373a98cf4abe93c6cf89c6dcc, type: 3}
   - {fileID: -620044607, guid: 1c3f5b4373a98cf4abe93c6cf89c6dcc, type: 3}
@@ -6319,6 +6323,7 @@ SpriteAtlas:
   - "\u0E2A\u0E19\u0E32\u0E21\u0E40\u0E17\u0E19\u0E19\u0E34\u0E2A_20"
   - "\u0E2A\u0E19\u0E32\u0E21\u0E40\u0E17\u0E19\u0E19\u0E34\u0E2A_21"
   - TumbleweedThistle
+  - "\u0E40\u0E2B\u0E47\u0E141 1_0"
   - "\u0E2D\u0E32\u0E04\u0E32\u0E23 1_34"
   - "\u0E2D\u0E32\u0E04\u0E32\u0E23 1_35"
   - "\u0E2D\u0E32\u0E04\u0E32\u0E23 1_36"
@@ -6384,6 +6389,7 @@ SpriteAtlas:
   - "\u0E2D\u0E32\u0E04\u0E32\u0E23 1_1"
   - "\u0E2D\u0E32\u0E04\u0E32\u0E23 1_0"
   - Sweetcorn
+  - "\u0E40\u0E2B\u0E47\u0E141_0"
   - "\u0E2D\u0E32\u0E04\u0E32\u0E23 13_11"
   - "\u0E2D\u0E32\u0E04\u0E32\u0E23 13_10"
   - "\u0E2D\u0E32\u0E04\u0E32\u0E23 13_19"
