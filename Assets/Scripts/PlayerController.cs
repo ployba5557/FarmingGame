@@ -221,21 +221,26 @@ public class PlayerController : MonoBehaviour
     break;
 
                 case ToolType.chopping:
-                    if (!EnergyController.instance.HasEnoughEnergy(energyUse_PerAction)) return;
-                    EnergyController.instance.UseEnergy(energyUse_PerAction);
-                    Collider2D hit = Physics2D.OverlapPoint(toolIndicator.position);
+    if (!EnergyController.instance.HasEnoughEnergy(energyUse_PerAction)) return;
+    EnergyController.instance.UseEnergy(energyUse_PerAction);
 
-                    if (hit != null && hit.CompareTag("Tree"))
-                    {
-                        ChoppableTree tree = hit.GetComponent<ChoppableTree>();
-                        if (tree != null)
-                        {
-                            tree.Chop();
-                            anim.SetTrigger("useChop"); 
-                        }
-                    }
-                    break;
-                
+    // 🚩 เปลี่ยนไปใช้ OverlapCircle แทน OverlapPoint
+    int choppableLayerMask = 1 << LayerMask.NameToLayer("spot"); // 🚩 ตรวจสอบว่า Layer "Tree" ถูกตั้งค่าใน Unity
+    float choppingOverlapRadius = 0.1f; // 🚩 กำหนดรัศมีการชนที่ต้องการ (เช่น 0.1f)
+
+    // 🚩 ใช้ OverlapCircle ตรวจสอบการชนกับ Layer "Tree"
+    Collider2D hit = Physics2D.OverlapCircle(toolIndicator.position, choppingOverlapRadius, choppableLayerMask);
+
+    if (hit != null && hit.CompareTag("Tree"))
+    {
+        ChoppableTree tree = hit.GetComponent<ChoppableTree>();
+        if (tree != null)
+        {
+            tree.Chop();
+            anim.SetTrigger("useChop"); 
+        }
+    }
+    break;
                 // ----------------------------------------------------
                 // *** โค้ดสำหรับ MINING ที่แก้ไขแล้ว ***
                 // *** สำคัญ: ต้องแน่ใจว่าได้สร้าง Layer "Mineable" ใน Unity แล้ว ***

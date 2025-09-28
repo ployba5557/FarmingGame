@@ -36,45 +36,4 @@ public class ItemController : MonoBehaviour
         return allItems.Find(i => i.itemName == itemName);
     }
 
-    public bool SellItem(string itemName, int amountToSell)
-    {
-        // ค้นหา ItemInfo จาก allItems
-        ItemInfo item = allItems.Find(i => i.itemName == itemName);
-
-        if (item != null)
-        {
-            // 1. ตรวจสอบว่ามีไอเท็มเพียงพอ
-            if (item.itemAmount >= amountToSell)
-            {
-                // 2. คำนวณรายได้ (ใช้ itemPrice)
-                float sellPrice = item.itemPrice * amountToSell;
-
-                // 3. หักไอเท็ม
-                item.itemAmount -= amountToSell;
-
-                // 4. เพิ่มเงิน (ต้องมี CurrencyController)
-                if (CurrencyController.instance != null)
-                {
-                    CurrencyController.instance.AddMoney(sellPrice);
-                }
-
-                // 5. อัปเดต UI Inventory
-                if (UIController.instance != null && UIController.instance.theIC != null)
-                {
-                    UIController.instance.theIC.UpdateDisplay();
-                }
-
-                return true;
-            }
-            else
-            {
-                Debug.LogWarning($"Cannot sell {itemName}. Not enough items.");
-                return false;
-            }
-        }
-
-        Debug.LogWarning($"Item {itemName} not found.");
-        return false;
-    }
-
 }

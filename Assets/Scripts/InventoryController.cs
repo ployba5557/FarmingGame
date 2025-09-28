@@ -7,7 +7,7 @@ public class InventoryController : MonoBehaviour
     public Dictionary<string, int> otherItems = new Dictionary<string, int>(); 
 
 
-      private void Awake()
+    private void Awake()
     {
         // ตรวจสอบและกำหนด Singleton
         if (instance == null)
@@ -29,7 +29,8 @@ public class InventoryController : MonoBehaviour
     public GameObject inventory2;
     public GameObject otherPanel;
     
-     public void AddItem(string itemID, int amount)
+    // ✅ ฟังก์ชัน: เพิ่มไอเทมเข้า Inventory
+    public void AddItem(string itemID, int amount)
     {
         if (otherItems.ContainsKey(itemID))
         {
@@ -42,6 +43,32 @@ public class InventoryController : MonoBehaviour
 
         // อัปเดต UI เมื่อมีการเปลี่ยนแปลงข้อมูล
         UpdateDisplay();
+    }
+    
+    // ✅ ฟังก์ชัน: ลบไอเทมออกจาก Inventory (จำเป็นสำหรับ Shop)
+    public void RemoveItem(string itemID, int amount)
+    {
+        if (otherItems.ContainsKey(itemID))
+        {
+            otherItems[itemID] -= amount;
+            
+            if (otherItems[itemID] <= 0)
+            {
+                otherItems.Remove(itemID);
+            }
+            
+            UpdateDisplay();
+        }
+    }
+    
+    // ✅ ฟังก์ชัน: ดึงจำนวนไอเทมปัจจุบัน (จำเป็นสำหรับ Shop)
+    public int GetItemAmount(string itemID)
+    {
+        if (otherItems.ContainsKey(itemID))
+        {
+            return otherItems[itemID];
+        }
+        return 0;
     }
 
 
@@ -66,50 +93,26 @@ public class InventoryController : MonoBehaviour
             UpdateDisplay();
         }
     }
+    
     public void UpdateDisplay()
-{
-    // 1. อัปเดต SeedDisplay
-    foreach(SeedDisplay seed in seeds)
     {
-        seed.UpdateDisplay();
-    }
-    
-    // 2. อัปเดต CropDisplay
-    foreach (CropDisplay crop in crops)
-    {
-        crop.UpdateDisplay();
-    }
-    
-    // 3. อัปเดต ItemDisplay โดยใช้ข้อมูลจาก Dictionary (เหลือลูปนี้ลูปเดียว)
-     foreach (ItemDisplay item in others)
-    {
-        item.UpdateDisplay();
-    }
-    
-     // 🚩 โค้ดที่ถูกต้อง: เพียงแค่สั่งให้ ItemDisplay ทุกตัวอัปเดตตัวเอง
-    //    ItemDisplay จะไปดึงจำนวนจาก ItemController เอง
-    foreach (ItemDisplay item in others)
-    {
-        item.UpdateDisplay();
-    }
-    
-    // 🚩 ลบโค้ดซ้ำซ้อนและผิดพลาดที่เคยแทรกเข้าไป
-    /*
-    foreach (ItemDisplay itemDisplay in others)
-    {
-        if (otherItems.ContainsKey(itemDisplay.itemID)) 
+        // 1. อัปเดต SeedDisplay
+        foreach(SeedDisplay seed in seeds)
         {
-            itemDisplay.amount = otherItems[itemDisplay.itemID]; 
+            seed.UpdateDisplay();
         }
-        else
+        
+        // 2. อัปเดต CropDisplay
+        foreach (CropDisplay crop in crops)
         {
-            itemDisplay.amount = 0;
+            crop.UpdateDisplay();
         }
-        itemDisplay.UpdateDisplay();
-    }
-    */
-
-
+        
+        // 3. อัปเดต ItemDisplay
+        foreach (ItemDisplay item in others)
+        {
+            item.UpdateDisplay();
+        }
     }
 
     public void SwitchScreens()
@@ -120,7 +123,7 @@ public class InventoryController : MonoBehaviour
         
         otherPanel.SetActive(true);
 
-       
+        
         InventoryController otherIC = otherPanel.GetComponent<InventoryController>();
         if (otherIC != null)
         {

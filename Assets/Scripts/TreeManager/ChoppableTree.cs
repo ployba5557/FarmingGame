@@ -1,54 +1,75 @@
-﻿// ไฟล์: ChoppableTree.cs
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ChoppableTree : MonoBehaviour
 {
-    public int hitPoints = 3; 
-    public GameObject logPrefab; 
-    public Transform dropPoint;
+    // 🚩 ต้องผูก ID ใน Inspector ให้ไม่ซ้ำกัน
     public string uniqueID; 
-    private Animator anim;
+    
+    // ข้อมูลการดรอปของขอนไม้
+    public GameObject dropPrefab; // Prefab ของไอเทม (ต้องมี PickupItem.cs)
+    public Transform dropPoint;
+    
+    public int hitPoints = 3; // จำนวนครั้งที่ต้องตัด
+    public float respawnDelay = 7200f; // เวลาเกิดใหม่เป็นวินาที (3 ชม. หรือตามต้องการ)
+    
+    // 🚩 ตัวแปร private สำหรับสถานะเริ่มต้น
+    private int startingHitPoints;
 
-    void Start()
+    private void Start()
     {
-        anim = GetComponent<Animator>();
-
-        // ไม่ต้องตรวจสอบ IsRemoved() ใน Start() อีกต่อไป เพราะ TreeRespawnManager จะทำหน้าที่สร้างต้นไม้ขึ้นมาใหม่เอง
+        startingHitPoints = hitPoints; // บันทึก HP เริ่มต้น
+        // 1. ตรวจสอบสถานะเมื่อเริ่มเกม/โหลดฉาก
+        CheckRespawnStateOnLoad();
     }
 
+    // เมธอดที่เรียกเมื่อผู้เล่นตัด
     public void Chop()
     {
         hitPoints--;
-
-        if (anim != null)
-        {
-            anim.SetTrigger("Chop");
-        }
+        // ... (ใส่ Logic สำหรับ Animation, เสียง, การใช้พลังงาน) ...
 
         if (hitPoints <= 0)
         {
-            // บันทึกเวลาที่ต้นไม้ถูกทำลายใน ObjectSaveManager เพื่อให้เกิดใหม่ได้
+            // 1. ดรอปไอเทม
+            if (dropPrefab != null && dropPoint != null)
+            {
+                Instantiate(dropPrefab, dropPoint.position, Quaternion.identity);
+            }
+            
+            // 2. บันทึกเวลาที่ถูกทำลายลงใน ObjectSaveManager (✅ แก้ไข)
             if (ObjectSaveManager.instance != null)
             {
                 ObjectSaveManager.instance.AddRespawnTimestamp(uniqueID);
             }
             
-            // อัปเดตความคืบหน้าเควส
-            if (QuestManager.Instance != null)
-            {
-                QuestManager.Instance.UpdateQuestProgress("Wood"); 
-            }
+            // 3. ซ่อนต้นไม้
+            gameObject.SetActive(false); 
+        }
+    }
 
-            // สร้างขอนไม้
-            if (logPrefab != null && dropPoint != null)
+    private void CheckRespawnStateOnLoad()
+    {
+        if (ObjectSaveManager.instance != null)
+        {
+            // 4. ตรวจสอบว่าต้นไม้ควรเกิดใหม่หรือไม่ (ใช้ logic ตามเวลา)
+            if (ObjectSaveManager.instance.ShouldRespawn(uniqueID, respawnDelay))
             {
-                Instantiate(logPrefab, dropPoint.position, Quaternion.identity);
-                
+                // ถ้าถึงเวลาเกิดใหม่แล้ว หรือไม่เคยถูกเก็บมาก่อน
+                gameObject.SetActive(true);
+                // 🚩 รีเซ็ต Hit Points เพื่อให้ตัดได้ใหม่
+                hitPoints = startingHitPoints; 
+                Debug.Log($"Tree {uniqueID} has RESPWNED.");
             }
-
-            // ทำลาย GameObject ของต้นไม้
-            Destroy(gameObject);
-            
+            else
+            {
+                // 5. ถ้ายังไม่ถึงเวลาเกิดใหม่ (ซ่อนไว้)
+                gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+             // ถ้า ObjectSaveManager ยังไม่พร้อม ให้แสดงต้นไม้ไว้ก่อน
+             gameObject.SetActive(true);
         }
     }
 }
