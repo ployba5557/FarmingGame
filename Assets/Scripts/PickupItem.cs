@@ -2,7 +2,7 @@
 
 public class PickupItem : MonoBehaviour
 {
-    public string itemName = "Item";
+    public string itemName = "Log";
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

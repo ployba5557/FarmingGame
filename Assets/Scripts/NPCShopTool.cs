@@ -1,10 +1,16 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
+// 🚩 เปลี่ยนชื่อคลาสเป็น NPCShopTool
 public class NPCShopTool : MonoBehaviour
 {
-    [Header("Dialogue and Shop")]
-    public string[] dialogue;
+    [Header("Shop References")]
+    // 🚩 เปลี่ยนตัวแปรอ้างอิงเป็น Manager ของร้าน Tool
+    // ตัวแปรนี้จะถูกผูกโดยตรงใน Inspector
+    public ShopToolControllerManager shopManagerTool;
+    
+    // 🚩 เปลี่ยนชื่อ NPC ให้เหมาะสมกับร้านหิน/ไม้
+    public string[] dialogue; 
     public string npcName = "Tool Seller"; // กำหนดชื่อ NPC
     public Sprite npcSprite; // กำหนดรูป NPC
 
@@ -30,9 +36,8 @@ public class NPCShopTool : MonoBehaviour
     {
         if (playerClose && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            // Unsubscribe จาก Event ก่อนหน้าเพื่อป้องกันการทำงานซ้ำ
+            // Unsubscribe ก่อน Subscribe เพื่อป้องกันการทำงานซ้ำ
             DialogueManagerShop.instance.OnYesSelected -= OnYesSelected;
-            // Subscribe เพื่อรับการแจ้งเตือนเมื่อผู้เล่นกด Yes
             DialogueManagerShop.instance.OnYesSelected += OnYesSelected;
 
             // เริ่มบทสนทนาและส่งข้อมูล NPC
@@ -45,10 +50,16 @@ public class NPCShopTool : MonoBehaviour
         // Unsubscribe ทันทีหลังจากที่ผู้เล่นกด Yes
         DialogueManagerShop.instance.OnYesSelected -= OnYesSelected;
 
-        // เรียกตัวจัดการร้านเครื่องมือเพื่อเปิดหน้าต่างโดยตรง
-        if (UIController.instance != null && UIController.instance.theShopTool != null)
+        // 🚩 แก้ไข: ใช้ตัวแปร shopManagerTool ที่ผูกใน Inspector
+        if (shopManagerTool != null && shopManagerTool.theShopToolController != null)
         {
-            UIController.instance.theShopTool.OpenClose();
+            // เรียก OpenClose ผ่าน Controller หลัก
+            shopManagerTool.theShopToolController.OpenClose();
+        }
+        else
+        {
+            // แสดง Error ที่ละเอียดขึ้นเพื่อช่วยในการดีบั๊ก
+            Debug.LogError("ShopToolControllerManager is NULL. Check if the NPC's 'Shop Manager Tool' field is assigned in the Inspector.");
         }
     }
 }
