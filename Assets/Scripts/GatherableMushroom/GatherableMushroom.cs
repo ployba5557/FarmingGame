@@ -5,10 +5,9 @@ public class GatherableMushroom : MonoBehaviour
     // 🚩 ต้องผูก ID ใน Inspector ให้ไม่ซ้ำกันสำหรับเห็ดแต่ละต้น
     public string uniqueID; 
     
-    public string itemID = "Mushroom"; // ID ไอเท็มเห็ด
+    public string itemID = "Mushroom"; // ID ไอเท็มเห็ด (ใช้สำหรับ Quest Progress)
     public int itemAmount = 1;
     public int initialSpawnOffsetDay = 1; 
-    //public float respawnDelay = 10800f; // เวลาเกิดใหม่เป็นวินาที (3 ชม.)
 
     private void Start()
     {
@@ -23,26 +22,32 @@ public class GatherableMushroom : MonoBehaviour
         {
             ItemController.instance.AddItem(itemID, itemAmount);
             Debug.Log($"Collected {itemAmount} of {itemID}.");
+            ItemController.instance.UpdateInventoryUI();
+        }
+        
+        // 2. อัปเดตความคืบหน้าของเควส! ✅ โค้ดที่เพิ่มเข้ามา
+        if (QuestManager.Instance != null)
+        {
+            // เรียก QuestManager โดยใช้ itemID ("Mushroom")
+            QuestManager.Instance.UpdateQuestProgress(itemID);
         }
 
-        // 2. บันทึกวันที่ถูกเก็บลงใน ObjectSaveManager (✅ แก้ไข)
+        // 3. บันทึกวันที่ถูกเก็บลงใน ObjectSaveManager
         if (ObjectSaveManager.instance != null)
         {
             ObjectSaveManager.instance.AddMushroomCollectedDay(uniqueID);
         }
 
-        // 3. ซ่อนเห็ด
+        // 4. ซ่อนเห็ด
         gameObject.SetActive(false);
     }
     
-    // 🚩 ✅ เพิ่ม: เมธอดนี้จะถูกเรียกโดย DayEndController
-    // เพื่อ "เก็บ" เห็ดที่ผู้เล่นพลาดไปโดยไม่ให้ไอเทม
+    // 🚩 ✅ เมธอดนี้จะถูกเรียกโดย DayEndController
     public void MarkAsMissed()
     {
         // 1. บันทึกวันที่ถูกเก็บลงใน ObjectSaveManager
         if (ObjectSaveManager.instance != null)
         {
-            // บันทึกวันที่ถูก "พลาด" ไป เพื่อเริ่มการนับเวลาเกิดใหม่แบบสุ่ม
             ObjectSaveManager.instance.AddMushroomCollectedDay(uniqueID);
             Debug.Log($"Mushroom {uniqueID} was MISSED and marked for randomized respawn.");
         }
@@ -50,16 +55,16 @@ public class GatherableMushroom : MonoBehaviour
         // 2. ซ่อนเห็ด
         gameObject.SetActive(false); 
         
-        // ไม่ต้องเพิ่มไอเทมเข้า Inventory
+        // ไม่ต้องเพิ่มไอเทมเข้า Inventory หรืออัปเดตเควส
     }
 
     private void CheckRespawnStateOnLoad()
     {
-         if (ObjectSaveManager.instance != null && TimeController.instance != null)
+        if (ObjectSaveManager.instance != null && TimeController.instance != null)
         {
             int currentDay = TimeController.instance.currentDay;
 
-             if (currentDay < initialSpawnOffsetDay)
+            if (currentDay < initialSpawnOffsetDay)
             {
                 gameObject.SetActive(false);
                 return; // ออกจากเมธอด ไม่ต้องตรวจสอบ Respawn Logic
@@ -77,6 +82,6 @@ public class GatherableMushroom : MonoBehaviour
                 // 5. ถ้ายังไม่ถึงเวลาเกิดใหม่ (FALSE) ให้ซ่อนไว้
                 gameObject.SetActive(false);
             }
-            }
         }
+    }
 }

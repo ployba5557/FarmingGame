@@ -179,7 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3681e81f9365734abfe2066ba4764f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 3
-  logPrefab: {fileID: 3606120677627464919, guid: 46257381c7a6e744d828617db793978d, type: 3}
-  dropPoint: {fileID: 8092675962468238886}
   uniqueID: tree_00
+  dropPrefab: {fileID: 3606120677627464919, guid: 46257381c7a6e744d828617db793978d, type: 3}
+  dropPoint: {fileID: 8092675962468238886}
+  hitPoints: 3
+  respawnDelay: 10800

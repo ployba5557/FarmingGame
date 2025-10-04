@@ -8,7 +8,7 @@ public class MineableRock : MonoBehaviour
     public int hitPoints = 3; // ขุดได้ 3 ครั้ง
     public GameObject dropPrefab; // Prefab เศษหิน
     public Transform dropPoint; // จุด spawn
-    public float respawnDelay = 7200f; // ✅ เพิ่ม: เวลาเกิดใหม่เป็นวินาที (เช่น 2 ชั่วโมง)
+    public float respawnDelay = 7200f; // เวลาเกิดใหม่เป็นวินาที
     
     private int startingHitPoints;
     private Animator anim;
@@ -18,11 +18,10 @@ public class MineableRock : MonoBehaviour
         anim = GetComponent<Animator>();
         startingHitPoints = hitPoints; // บันทึก HP เริ่มต้น
 
-        // 🚩 เปลี่ยน: ใช้ CheckRespawnStateOnLoad แทนการตรวจสอบ IsRemoved แบบถาวร
         CheckRespawnStateOnLoad();
     }
     
-    // 🚩 เพิ่ม: เมธอดสำหรับตรวจสอบสถานะการเกิดใหม่
+    // 🚩 เมธอดสำหรับตรวจสอบสถานะการเกิดใหม่
     private void CheckRespawnStateOnLoad()
     {
         if (ObjectSaveManager.instance != null)
@@ -55,23 +54,27 @@ public class MineableRock : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            // 🚩 เปลี่ยน: บันทึกเวลาที่ถูกทำลายลงใน ObjectSaveManager แทน MarkObjectDestroyed
-            if (ObjectSaveManager.instance != null)
-            {
-                ObjectSaveManager.instance.AddRespawnTimestamp(uniqueID);
-            }
-            
             // 1. ดรอปไอเทม
             if (dropPrefab != null && dropPoint != null)
             {
                 Instantiate(dropPrefab, dropPoint.position, Quaternion.identity);
             }
             
-            // 2. ซ่อนหิน แทนการ Destroy ถาวร
-            gameObject.SetActive(false);
+            // 2. อัปเดตความคืบหน้าของเควส! ✅ โค้ดที่เพิ่มเข้ามา
+            if (QuestManager.Instance != null)
+            {
+                // เรียก QuestManager เพื่อแจ้งว่ามีการเก็บ 'Stone' (หิน) แล้ว 1 หน่วย
+                QuestManager.Instance.UpdateQuestProgress("Stone");
+            }
+
+            // 3. บันทึกเวลาที่ถูกทำลายลงใน ObjectSaveManager
+            if (ObjectSaveManager.instance != null)
+            {
+                ObjectSaveManager.instance.AddRespawnTimestamp(uniqueID);
+            }
             
-            // 🚩 ลบ: Destroy(gameObject) ทิ้ง
-            // 🚩 ลบ: ObjectSaveManager.instance.MarkObjectDestroyed(uniqueID); ทิ้ง
+            // 4. ซ่อนหิน 
+            gameObject.SetActive(false);
         }
     }
 }

@@ -2,9 +2,9 @@
 
 public class FishingSpotObject : MonoBehaviour
 {
-    public GameObject dropFishPrefab;         // ปลา Prefab ที่จะ spawn
-    public Transform dropPoint;               // จุด spawn
-    public string uniqueID;                   // สำหรับ save/load
+    public GameObject dropFishPrefab;         // ปลา Prefab ที่จะ spawn
+    public Transform dropPoint;               // จุด spawn
+    public string uniqueID;                   // สำหรับ save/load
     private Animator anim;
 
     void Start()
@@ -19,40 +19,40 @@ public class FishingSpotObject : MonoBehaviour
 
     public void Fish() 
     {
-         Debug.Log("Fishing at: " + uniqueID);
+        Debug.Log("Fishing at: " + uniqueID);
 
-    if (anim != null)
-    {
-        anim.SetTrigger("useFishing");
-    }
-    else
-    {
-        Debug.LogWarning("No Animator on: " + uniqueID);
-    }
+        if (anim != null)
+        {
+            anim.SetTrigger("useFishing");
+        }
+        else
+        {
+            Debug.LogWarning("No Animator on: " + uniqueID);
+        }
 
-    float waitTime = Random.Range(1f, 10f);
-    Debug.Log("WaitTime: " + waitTime);
-    Invoke("FinishFishing", waitTime);
-}
+        float waitTime = Random.Range(1f, 10f);
+        Debug.Log("WaitTime: " + waitTime);
+        Invoke("FinishFishing", waitTime);
+    }
 
     void FinishFishing()
     {
-        gameObject.SetActive(false); // ปิดปลาชั่วคราว
+        gameObject.SetActive(false); // ปิดจุดตกปลาชั่วคราว
 
         if (dropFishPrefab != null && dropPoint != null)
         {
             Instantiate(dropFishPrefab, dropPoint.position, Quaternion.identity);
 
-              if (QuestManager.Instance != null)
+            // 🚩 Logic การอัปเดตเควส ถูกเพิ่มไว้แล้วและถูกต้อง
+            if (QuestManager.Instance != null)
             {
-                // ✅ แก้ไขตรงนี้ให้ส่งชื่อ "Fish" ไปโดยตรง
+                // เรียก QuestManager เพื่ออัปเดตความคืบหน้าของเควส "Fish" (ปลา)
                 QuestManager.Instance.UpdateQuestProgress("Fish");
             }
         }
             
-
-        Destroy(gameObject); // ← อันนี้ "ให้เปิดไว้" ถ้าอยากให้หายหลังตกปลา
+        // หากต้องการให้จุดตกปลาหายไปถาวรหลังจากตกเสร็จ
+        // หากไม่ต้องการ ให้ใช้การจัดการ Respawn ผ่าน ObjectSaveManager แทน Destroy(gameObject)
+        Destroy(gameObject); 
     }
-
-
 }

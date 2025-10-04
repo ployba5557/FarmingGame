@@ -38,6 +38,18 @@ public class TestQuestGiver : MonoBehaviour
             "Stone",
             10
         ));
+        questsToAdd.Add(new FishQuest(
+            "Catch a Fish",
+            "Go to the lake and catch 3 fish.",
+            "Fish",
+            3
+        ));
+        questsToAdd.Add(new GatherItemsQuest(
+            "Cut Trees",
+            "Cut down a total of 2 trees to get wood.",
+            "Wood",
+            2
+        ));
         // เพิ่มเควสอื่นๆ ที่คุณต้องการในลิสต์นี้
 
         // เริ่ม Coroutine เพื่อเพิ่มเควสทีละรายการ

@@ -47,19 +47,21 @@ public class NPCShopTool : MonoBehaviour
 
     private void OnYesSelected()
     {
-        // Unsubscribe ทันทีหลังจากที่ผู้เล่นกด Yes
-        DialogueManagerShop.instance.OnYesSelected -= OnYesSelected;
+        // Unsubscribe ทันที
+    DialogueManagerShop.instance.OnYesSelected -= OnYesSelected;
 
-        // 🚩 แก้ไข: ใช้ตัวแปร shopManagerTool ที่ผูกใน Inspector
-        if (shopManagerTool != null && shopManagerTool.theShopToolController != null)
-        {
-            // เรียก OpenClose ผ่าน Controller หลัก
-            shopManagerTool.theShopToolController.OpenClose();
-        }
-        else
-        {
-            // แสดง Error ที่ละเอียดขึ้นเพื่อช่วยในการดีบั๊ก
-            Debug.LogError("ShopToolControllerManager is NULL. Check if the NPC's 'Shop Manager Tool' field is assigned in the Inspector.");
-        }
+    // 🚩 แก้ไข: ใช้ Singleton Instance
+    ShopToolControllerManager manager = ShopToolControllerManager.instance; 
+
+    // ตรวจสอบ manager.instance แทน shopManagerTool
+    if (manager != null && manager.theShopToolController != null)
+    {
+        manager.theShopToolController.OpenClose();
+    }
+    else
+    {
+        // Error จะบอกให้รู้ว่า Manager ตัวหลักหายไป
+        Debug.LogError("ShopToolControllerManager.instance is NULL after loading the new day/scene.");
+    }
     }
 }

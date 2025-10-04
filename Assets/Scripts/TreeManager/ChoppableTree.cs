@@ -10,7 +10,7 @@ public class ChoppableTree : MonoBehaviour
     public Transform dropPoint;
     
     public int hitPoints = 3; // จำนวนครั้งที่ต้องตัด
-    public float respawnDelay = 7200f; // เวลาเกิดใหม่เป็นวินาที (3 ชม. หรือตามต้องการ)
+    public float respawnDelay = 7200f; // เวลาเกิดใหม่เป็นวินาที
     
     // 🚩 ตัวแปร private สำหรับสถานะเริ่มต้น
     private int startingHitPoints;
@@ -36,13 +36,20 @@ public class ChoppableTree : MonoBehaviour
                 Instantiate(dropPrefab, dropPoint.position, Quaternion.identity);
             }
             
-            // 2. บันทึกเวลาที่ถูกทำลายลงใน ObjectSaveManager (✅ แก้ไข)
+            // 2. อัปเดตความคืบหน้าของเควส!
+            if (QuestManager.Instance != null)
+            {
+                // แจ้ง QuestManager ว่ามีการเก็บ 'Wood' (ไม้) แล้ว 1 หน่วย
+                QuestManager.Instance.UpdateQuestProgress("Wood");
+            }
+            
+            // 3. บันทึกเวลาที่ถูกทำลายลงใน ObjectSaveManager
             if (ObjectSaveManager.instance != null)
             {
                 ObjectSaveManager.instance.AddRespawnTimestamp(uniqueID);
             }
             
-            // 3. ซ่อนต้นไม้
+            // 4. ซ่อนต้นไม้
             gameObject.SetActive(false); 
         }
     }
