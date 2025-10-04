@@ -17,7 +17,7 @@ public class ShopControllerManagerMushroom : MonoBehaviour
         else
         {
             instance = this;
-            // DontDestroyOnLoad(gameObject); // ตัวเลือก: ถ้าต้องการให้ Manager อยู่ตลอด
+            DontDestroyOnLoad(gameObject); // ตัวเลือก: ถ้าต้องการให้ Manager อยู่ตลอด
         }
     }
 }
