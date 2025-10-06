@@ -6,8 +6,8 @@ public class CharacterSelectManager : MonoBehaviour
 {
     public static CharacterSelectManager Instance;
 
-    // ตัวแปรสำหรับเก็บการเลือก: True = ผู้ชาย, False = ผู้หญิง
-    public bool isMale = true; 
+    // ตัวแปรสำหรับเก็บการเลือก: True = ผู้หญิง, False = ผู้ชาย
+    public bool isMale = false; 
 
     // ตั้งค่าชื่อ Scene เกมหลัก
     public string gameSceneName = "GameScene";
