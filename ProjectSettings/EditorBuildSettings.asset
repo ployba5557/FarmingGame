@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LobbyScence/CharacterSelectScene.unity
     guid: ae6d059f302fb7f4898b9dae01df4b88
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/Main/Main.unity
     guid: eab5fde1da5a04648ae6d883485291f5
   - enabled: 1
     path: Assets/Scenes/Building/Indoors.unity
