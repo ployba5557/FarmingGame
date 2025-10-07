@@ -14,6 +14,8 @@ public class QuestManager : MonoBehaviour
     // รายการเควสที่กำลังดำเนินอยู่
     private readonly List<IQuest> _activeQuests = new List<IQuest>();
 
+    private readonly List<IQuest> _availableQuests = new List<IQuest>();
+
     private void Awake()
     {
         if (Instance == null)
@@ -26,6 +28,22 @@ public class QuestManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void AddAvailableQuest(IQuest newQuest)
+{
+    if (!_availableQuests.Contains(newQuest) && !_activeQuests.Contains(newQuest))
+    {
+        // 🛑 ห้ามเรียก newQuest.StartQuest() ที่นี่
+        _availableQuests.Add(newQuest);
+        Debug.Log($"Quest '{newQuest.QuestName}' is now available.");
+        
+        if (uiManager != null)
+        {
+            uiManager.DisplayQuestList();
+        }
+    }
+}
+
 
     public void AddNewQuest(IQuest newQuest)
     {
@@ -42,7 +60,7 @@ public class QuestManager : MonoBehaviour
             }
         }
     }
-    
+
     public void RemoveQuest(IQuest quest)
     {
         if (_activeQuests.Contains(quest))
@@ -51,42 +69,63 @@ public class QuestManager : MonoBehaviour
             Debug.Log($"Quest '{quest.QuestName}' has been cancelled.");
         }
     }
+    
+    public void AcceptQuest(IQuest quest)
+{
+    if (_availableQuests.Contains(quest))
+    {
+        _availableQuests.Remove(quest);
+        _activeQuests.Add(quest);
+        quest.StartQuest(); // ✅ เรียก StartQuest() ที่นี่
+        
+        Debug.Log($"Quest '{quest.QuestName}' has been accepted and started.");
+
+        if (uiManager != null)
+        {
+            uiManager.DisplayQuestList();
+        }
+    }
+}
+
 
     public void UpdateQuestProgress(string itemName)
     {
         for (int i = _activeQuests.Count - 1; i >= 0; i--)
+    {
+        IQuest quest = _activeQuests[i];
+        
+        // 1. อัปเดตความคืบหน้า
+        quest.UpdateProgress(itemName);
+        
+        if (uiManager != null)
         {
-            IQuest quest = _activeQuests[i];
+            uiManager.UpdateQuestProgressText(quest);
+        }
+        
+        // 2. ตรวจสอบว่าเควสเสร็จสมบูรณ์หรือไม่
+        if (quest.IsCompleted)
+        {
+            // 🛑 สำคัญ: ไม่ต้องเรียก CompleteQuest(quest) ตรงนี้
+            // 🛑 CompleteQuest จะถูกเรียกเมื่อผู้เล่นกดปุ่มใน UI เท่านั้น
             
-            // อัปเดตความคืบหน้า
-            quest.UpdateProgress(itemName);
-            
-            // อัปเดต UI ทันที
-            if (uiManager != null)
-            {
-                uiManager.UpdateQuestProgressText(quest);
-            }
-            
-            // ตรวจสอบว่าเควสเสร็จสมบูรณ์หรือไม่
-            if (quest.IsCompleted)
-            {
-                CompleteQuest(quest);
-            }
+            Debug.Log($"Quest '{quest.QuestName}' is ready to complete!"); 
+            // 💡 เราปล่อยให้มันยังอยู่ใน _activeQuests จนกว่าผู้เล่นจะกดรับรางวัล
+        }
         }
     }
     
     public void CompleteQuest(IQuest quest)
     {
         if (_activeQuests.Contains(quest))
-        {
-            quest.CompleteQuest();
-            _activeQuests.Remove(quest);
-            Debug.Log($"Quest '{quest.QuestName}' completed and removed from the active list.");
+    {
+        quest.CompleteQuest();
+        _activeQuests.Remove(quest); // ✅ บรรทัดนี้ทำงานเมื่อกดปุ่มใน UI
+        Debug.Log($"Quest '{quest.QuestName}' completed and removed from the active list.");
 
-            if (uiManager != null)
-            {
-                uiManager.DisplayQuestList();
-            }
+        if (uiManager != null)
+        {
+            uiManager.DisplayQuestList();
+        }
         }
     }
     
@@ -102,8 +141,11 @@ public class QuestManager : MonoBehaviour
         return null;
     }
 
-    public List<IQuest> GetActiveQuests()
-    {
-        return _activeQuests;
-    }
+    public List<IQuest> GetAllQuests()
+{
+    // แสดงเควสที่รอรับและเควสที่กำลังทำ
+    List<IQuest> allQuests = new List<IQuest>(_availableQuests);
+    allQuests.AddRange(_activeQuests);
+    return allQuests;
+}
 }

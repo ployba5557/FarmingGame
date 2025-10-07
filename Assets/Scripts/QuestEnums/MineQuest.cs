@@ -9,11 +9,16 @@ public class MineQuest : IQuest
     public bool IsCompleted => _currentCount >= _requiredCount;
     public bool IsAccepted { get; set; }
 
+    public int MoneyReward => _moneyReward;
+
+
     private readonly string _targetItemName;
     private readonly int _requiredCount;
     private int _currentCount;
 
-    public MineQuest(string questName, string description, string targetItemName, int requiredCount)
+    private readonly int _moneyReward;
+
+    public MineQuest(string questName, string description, string targetItemName, int requiredCount, int moneyReward)
     {
         QuestName = questName;
         Description = description;
@@ -21,6 +26,7 @@ public class MineQuest : IQuest
         _requiredCount = requiredCount;
         _currentCount = 0;
         IsAccepted = false;
+        _moneyReward = moneyReward;
     }
 
     public void StartQuest()

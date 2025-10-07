@@ -1,30 +1,52 @@
-// ไฟล์: UIManager.cs
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System.Collections; // ต้องเพิ่มบรรทัดนี้สำหรับ Coroutine
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    // === UI Panels and Containers ===
     public GameObject questPanel;
-    public TextMeshProUGUI questListText; 
-    
-    public GameObject questListParent; 
+    public GameObject questListParent;
     public GameObject questButtonPrefab;
     
     public GameObject questDetailPanel;
+
+    // === Text Components ===
+    public TextMeshProUGUI questListText; // (อาจไม่ได้ใช้ถ้าใช้ Prefab ปุ่ม)
     public TextMeshProUGUI detailQuestNameText;
     public TextMeshProUGUI detailQuestDescriptionText;
     public TextMeshProUGUI questProgressText;
 
+    [Header("Scene Management")]
+    public string lobbySceneName = "LobbyScene"; 
+
+      [Header("Confirmation Panel")]
+    public GameObject confirmationPanel;
+    public Button confirmLobbyButton;
+    public Button cancelLobbyButton;
+
+    // ✅ เพิ่มตัวแปรสำหรับปุ่มออก (ถ้ามีปุ่มเฉพาะในฉาก)
+    public Button goToLobbyButton;
+    
+    // === Reward Notification UI ===
+    // ✅ เพิ่มตัวแปรสำหรับข้อความแจ้งเตือนรางวัล
+    public TextMeshProUGUI rewardNotificationText; 
+    public float notificationDisplayTime = 3f;
+
+    // === Buttons ===
     public Button acceptButton;
     public Button cancelButton;
     public Button backButton;
     public Button completeButton;
 
+    // === Internal State ===
     private bool isQuestPanelOpen = false;
     private IQuest _selectedQuest;
     
+    // === Singleton ===
     public static UIManager Instance { get; private set; }
 
     private void Awake()
@@ -38,6 +60,22 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void Start()
+    {
+        // ลบ Listener ที่เคยถูกผูกไว้ใน Inspector หรือโค้ดอื่นๆ ออกทั้งหมด
+        if (goToLobbyButton != null)
+        {
+            goToLobbyButton.onClick.RemoveAllListeners();
+            
+            // ผูก Listener ที่ถูกต้องเพียงตัวเดียวด้วยโค้ด
+            goToLobbyButton.onClick.AddListener(ShowLobbyConfirmation);
+        }
+    }
+
+    // ===================================
+    // QUEST PANEL MANAGEMENT
+    // ===================================
 
     public void ToggleQuestPanel()
     {
@@ -53,15 +91,17 @@ public class UIManager : MonoBehaviour
 
     public void DisplayQuestList()
     {
+        // ล้างปุ่มเควสเดิม
         foreach (Transform child in questListParent.transform)
         {
             Destroy(child.gameObject);
         }
 
         if (QuestManager.Instance == null) return;
-        List<IQuest> activeQuests = QuestManager.Instance.GetActiveQuests();
+        // 🛑 ใช้ GetAllQuests() เพื่อแสดงทั้งเควสที่รอรับและกำลังทำ
+        List<IQuest> allQuests = QuestManager.Instance.GetAllQuests();
 
-        if (activeQuests.Count == 0)
+        if (allQuests.Count == 0)
         {
             GameObject noQuestText = Instantiate(questButtonPrefab, questListParent.transform);
             noQuestText.GetComponentInChildren<TextMeshProUGUI>().text = "You have no active quests.";
@@ -72,7 +112,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            foreach (IQuest quest in activeQuests)
+            foreach (IQuest quest in allQuests)
             {
                 GameObject newButtonObj = Instantiate(questButtonPrefab, questListParent.transform);
                 Button newButton = newButtonObj.GetComponent<Button>();
@@ -92,20 +132,29 @@ public class UIManager : MonoBehaviour
         detailQuestDescriptionText.text = quest.Description;
         UpdateQuestProgressText(quest);
 
+        // Logic การแสดงปุ่มตามสถานะเควส:
+        // Accept: แสดงถ้ายังไม่ถูกรับ
         acceptButton.gameObject.SetActive(!quest.IsAccepted);
-        cancelButton.gameObject.SetActive(quest.IsAccepted);
+        
+        // Cancel: แสดงถ้าถูกรับแล้ว (และยังไม่เสร็จ)
+        // 💡 เราจะแสดง Cancel เมื่อ IsAccepted เป็นจริง และ IsCompleted เป็นเท็จ
+        cancelButton.gameObject.SetActive(quest.IsAccepted && !quest.IsCompleted); 
+        
+        // Complete: แสดงถ้าเควสเสร็จสมบูรณ์แล้ว
         completeButton.gameObject.SetActive(quest.IsCompleted);
 
+        // ล้าง Listener เดิม
         acceptButton.onClick.RemoveAllListeners();
         cancelButton.onClick.RemoveAllListeners();
         backButton.onClick.RemoveAllListeners();
         completeButton.onClick.RemoveAllListeners();
 
+        // ผูก Listener ใหม่
         if(!quest.IsAccepted)
         {
             acceptButton.onClick.AddListener(AcceptQuest);
         }
-        else
+        else if (quest.IsAccepted && !quest.IsCompleted)
         {
             cancelButton.onClick.AddListener(CancelQuest);
         }
@@ -122,11 +171,22 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void HideQuestDetails()
+    {
+        questDetailPanel.SetActive(false);
+        questListParent.SetActive(true);
+    }
+
+    // ===================================
+    // QUEST ACTIONS
+    // ===================================
+
     public void AcceptQuest()
     {
         if (_selectedQuest != null && QuestManager.Instance != null)
         {
-            QuestManager.Instance.AddNewQuest(_selectedQuest);
+            // 🛑 เรียกเมธอดใหม่ AcceptQuest ที่จะย้ายเควสไป Active List
+            QuestManager.Instance.AcceptQuest(_selectedQuest); 
             HideQuestDetails();
             DisplayQuestList();
         }
@@ -146,15 +206,101 @@ public class UIManager : MonoBehaviour
     {
         if (_selectedQuest != null && _selectedQuest.IsCompleted && QuestManager.Instance != null)
         {
+            // ✅ 1. มอบรางวัล
+            GiveRewards(_selectedQuest);
+
+            // 2. สั่ง QuestManager ลบเควสออกจาก Active List
             QuestManager.Instance.CompleteQuest(_selectedQuest);
+            
             HideQuestDetails();
             DisplayQuestList();
         }
     }
 
-    private void HideQuestDetails()
+    // ===================================
+    // REWARD LOGIC
+    // ===================================
+
+    // ✅ เมธอดสำหรับมอบรางวัล
+    private void GiveRewards(IQuest quest)
     {
-        questDetailPanel.SetActive(false);
-        questListParent.SetActive(true);
+        // มอบรางวัลเงิน
+        if (CurrencyController.instance != null && quest.MoneyReward > 0)
+        {
+            float rewardAmount = quest.MoneyReward;
+            CurrencyController.instance.AddMoney(rewardAmount); 
+            
+            // แสดงข้อความแจ้งเตือน
+            ShowRewardNotification($"get reward {rewardAmount}!", notificationDisplayTime);
+        }
+        
+        // 💡 สามารถเพิ่ม Logic สำหรับรางวัลไอเทมตรงนี้ในอนาคต
+    }
+
+    // ✅ เมธอดสำหรับแสดงข้อความแจ้งเตือนรางวัล
+    public void ShowRewardNotification(string message, float duration)
+    {
+        if (rewardNotificationText != null)
+        {
+            // หยุด Coroutine เดิม (ถ้ามี) เพื่อให้ข้อความใหม่แสดงได้
+            StopAllCoroutines();
+
+            rewardNotificationText.text = message;
+            rewardNotificationText.gameObject.SetActive(true);
+
+            // เริ่ม Coroutine เพื่อรอเวลาแล้วซ่อนข้อความ
+            StartCoroutine(HideNotificationAfterDelay(duration));
+        }
+    }
+
+    // ===================================
+    // SCENE MANAGEMENT
+    // ===================================
+
+    // ✅ 1. เมธอดสำหรับแสดงหน้าต่างยืนยัน (ผูกกับปุ่ม GoToLobbyButton เดิม)
+    public void ShowLobbyConfirmation()
+    {
+        // ปิด UI อื่นๆ ที่อาจจะแสดงอยู่ (เช่น Quest Panel)
+        if (questPanel.activeSelf)
+        {
+            questPanel.SetActive(false);
+        }
+
+         confirmationPanel.SetActive(true);
+    
+     // ✅ สำคัญ: ต้อง RemoveAllListeners ก่อน Add เสมอ
+        confirmLobbyButton.onClick.RemoveAllListeners();
+        cancelLobbyButton.onClick.RemoveAllListeners();
+
+        // ผูก Listener ใหม่:
+        confirmLobbyButton.onClick.AddListener(GoToLobby);
+        cancelLobbyButton.onClick.AddListener(HideLobbyConfirmation);
+    }
+    
+    // ✅ 2. เมธอดสำหรับซ่อนหน้าต่างยืนยัน
+    public void HideLobbyConfirmation()
+    {
+        confirmationPanel.SetActive(false);
+    }
+
+    //Go to HomeLobby
+     public void GoToLobby()
+    {
+        // 💡 คุณอาจต้องการเพิ่มโค้ดบันทึกเกม (Save Game) ที่นี่ก่อน
+        
+        Debug.Log($"Loading Lobby scene: {lobbySceneName}");
+        
+        // ใช้ SceneManager เพื่อโหลดฉากใหม่
+        SceneManager.LoadScene(lobbySceneName);
+    }
+
+    // ✅ Coroutine สำหรับซ่อนข้อความ
+    private IEnumerator HideNotificationAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if(rewardNotificationText != null)
+        {
+            rewardNotificationText.gameObject.SetActive(false);
+        }
     }
 }

@@ -11,13 +11,17 @@ public class GatherItemsQuest : IQuest
     // ✅ เพิ่มบรรทัดนี้เพื่อแก้ไขปัญหา
     public bool IsAccepted { get; set; }
 
+    public int MoneyReward => _moneyReward; 
+
     public string ProgressText => $"{_currentCount}/{_requiredCount}";
+
+    private readonly int _moneyReward;
 
     private readonly string _targetItemName;
     private readonly int _requiredCount;
     private int _currentCount;
 
-    public GatherItemsQuest(string questName, string description, string targetItemName, int requiredCount)
+    public GatherItemsQuest(string questName, string description, string targetItemName, int requiredCount,int moneyReward)
     {
         QuestName = questName;
         Description = description;
@@ -25,6 +29,7 @@ public class GatherItemsQuest : IQuest
         _requiredCount = requiredCount;
         _currentCount = 0;
         IsAccepted = false; // ตั้งค่าเริ่มต้น
+        _moneyReward = moneyReward;
     }
 
     public void StartQuest()
