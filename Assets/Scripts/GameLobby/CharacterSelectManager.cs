@@ -28,7 +28,7 @@ public class CharacterSelectManager : MonoBehaviour
     // เมธอดสำหรับปุ่ม "ผู้ชาย"
     public void SelectMale()
     {
-        isMale = true;
+        isMale = false;
         Debug.Log("Character selected: Male. Loading Game Scene...");
         StartGame();
     }
@@ -36,7 +36,7 @@ public class CharacterSelectManager : MonoBehaviour
     // เมธอดสำหรับปุ่ม "ผู้หญิง"
     public void SelectFemale()
     {
-        isMale = false;
+        isMale = true;
         Debug.Log("Character selected: Female. Loading Game Scene...");
         StartGame();
     }
