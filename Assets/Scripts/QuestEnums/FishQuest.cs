@@ -12,11 +12,15 @@ public class FishQuest : IQuest
     // ✅ Add this line to resolve the compilation error.
     public bool IsAccepted { get; set; }
 
+    public int MoneyReward => _moneyReward;
+
     private readonly string _targetFishName;
     private readonly int _requiredCount;
     private int _currentCount;
 
-    public FishQuest(string questName, string description, string targetFishName, int requiredCount)
+    private readonly int _moneyReward; 
+
+    public FishQuest(string questName, string description, string targetFishName, int requiredCount, int moneyReward)
     {
         QuestName = questName;
         Description = description;
@@ -24,6 +28,7 @@ public class FishQuest : IQuest
         _requiredCount = requiredCount;
         _currentCount = 0;
         IsAccepted = false; // Set initial state to false.
+        _moneyReward = moneyReward;
     }
 
     public void StartQuest()

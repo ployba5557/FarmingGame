@@ -15,6 +15,8 @@ public interface IQuest
     // ✅ เพิ่มบรรทัดนี้เพื่อแก้ไขปัญหา
     bool IsAccepted { get; }
 
+    int MoneyReward { get; }
+
   string ProgressText { get; }
 
     // ฟังก์ชันสำหรับเริ่มต้นเควส

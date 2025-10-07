@@ -6,6 +6,8 @@ public class FarmQuest : IQuest
     public string QuestName { get; }
     public string Description { get; }
 
+    public int MoneyReward => _moneyReward;
+
     public string ProgressText => $"{_currentCount}/{_requiredCount}";
 
     public QuestType Type => QuestType.Farm;
@@ -14,11 +16,13 @@ public class FarmQuest : IQuest
     // ✅ เพิ่มบรรทัดนี้เพื่อแก้ไขปัญหา
     public bool IsAccepted { get; set; }
 
+    private readonly int _moneyReward; 
+
     private readonly string _targetItemName;
     private readonly int _requiredCount;
     private int _currentCount;
 
-    public FarmQuest(string questName, string description, string targetItemName, int requiredCount)
+    public FarmQuest(string questName, string description, string targetItemName, int requiredCount, int moneyReward)
     {
         QuestName = questName;
         Description = description;
@@ -26,6 +30,7 @@ public class FarmQuest : IQuest
         _requiredCount = requiredCount;
         _currentCount = 0;
         IsAccepted = false; // กำหนดค่าเริ่มต้นเป็น false
+        _moneyReward = moneyReward;
     }
 
     public void StartQuest()
