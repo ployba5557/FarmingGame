@@ -8,11 +8,13 @@ public class ObjectSaveManager : MonoBehaviour
     public static ObjectSaveManager instance;
 
     // --- 1. ระบบ Respawn ตามเวลา (หิน/ไม้) ---
-    public Dictionary<string, double> respawnableTimestamps = new Dictionary<string, double>(); 
+    public Dictionary<string, double> respawnableTimestamps = new Dictionary<string, double>();
 
     // --- 2. ระบบ Respawn แบบสุ่มตามวัน (เห็ด) ---
     // Key: uniqueID, Value: วันที่ (TimeController.instance.currentDay) ที่ถูกเก็บล่าสุด
     public Dictionary<string, int> mushroomCollectedDay = new Dictionary<string, int>(); 
+    
+     public Dictionary<string, int> animalCollectedDay = new Dictionary<string, int>();
 
     // --- 3. ระบบหายถาวร ---
     private HashSet<string> removedObjects = new HashSet<string>(); 
@@ -108,22 +110,76 @@ public class ObjectSaveManager : MonoBehaviour
 
         // 🚩 แก้ไข: ใช้ TimeController แทน DayManager
         if (TimeController.instance == null) return false;
-        
+
         int currentDay = TimeController.instance.currentDay;
         int dayCollected = mushroomCollectedDay[id];
 
         int daysPassed = currentDay - dayCollected;
-        
-        int minDays = 3; 
-        int maxDays = 5; 
+
+        int minDays = 3;
+        int maxDays = 5;
 
         if (daysPassed >= minDays)
         {
-            float probability = (float)daysPassed / maxDays; 
-            
+            float probability = (float)daysPassed / maxDays;
+
             if (UnityEngine.Random.value < probability)
             {
                 mushroomCollectedDay.Remove(id);
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    // =========================================================================
+    //                            E. Daily Respawn (เนื้อสัตว์)
+    // =========================================================================
+
+    // 🎯 บันทึกวันที่สัตว์ถูกเก็บ
+    public void AddAnimalCollectedDay(string id)
+    {
+        if (TimeController.instance != null)
+        {
+            int currentDay = TimeController.instance.currentDay;
+            if (animalCollectedDay.ContainsKey(id))
+            {
+                animalCollectedDay[id] = currentDay;
+            }
+            else
+            {
+                animalCollectedDay.Add(id, currentDay);
+            }
+        }
+    }
+    
+    // 🎯 ตรวจสอบว่าสัตว์ควรเกิดใหม่แบบสุ่มหรือไม่ (ต้องใช้ minRespawnDays จาก GatherableAnimal)
+    // 💡 เมธอดนี้ถูกออกแบบมาเพื่อรองรับ logic ที่อยู่ใน GatherableAnimal.cs ที่ผมให้ไปก่อนหน้านี้
+    public bool ShouldAnimalRespawn(string id, int minDaysRequired)
+    {
+        if (!animalCollectedDay.ContainsKey(id))
+        {
+            return true;
+        }
+
+        if (TimeController.instance == null) return false;
+        
+        int currentDay = TimeController.instance.currentDay;
+        int dayCollected = animalCollectedDay[id];
+
+        int daysPassed = currentDay - dayCollected;
+        
+        // 1. ตรวจสอบว่าถึงวันเกิดใหม่ขั้นต่ำหรือยัง
+        if (daysPassed >= minDaysRequired)
+        {
+            // 2. ใช้โอกาสสุ่มเกิดใหม่ (โอกาส 50% ต่อวันหลังจากวันขั้นต่ำ)
+            // คุณอาจปรับให้โอกาสเพิ่มขึ้นตาม daysPassed ก็ได้
+            float probability = 0.5f; // โอกาส 50% ในการเกิดใหม่เมื่อถึงวันขั้นต่ำ
+            
+            if (UnityEngine.Random.value < probability)
+            {
+                animalCollectedDay.Remove(id);
                 return true;
             }
         }
