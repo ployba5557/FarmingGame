@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: f64143b006744124ea83718ce7688924
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3487907741916063891
+    second: Woman_Character_Farming_Game_0
+  - first:
+      213: -5274338284647051970
+    second: Woman_Character_Farming_Game_1
+  - first:
+      213: -3577778183181413541
+    second: Woman_Character_Farming_Game_2
+  - first:
+      213: -8999665197910786062
+    second: Woman_Character_Farming_Game_3
+  - first:
+      213: 4052839859561149786
+    second: Woman_Character_Farming_Game_4
+  - first:
+      213: -2244405584829743424
+    second: Woman_Character_Farming_Game_5
+  - first:
+      213: 3047466608872173217
+    second: Woman_Character_Farming_Game_6
+  - first:
+      213: 3498571670144573318
+    second: Woman_Character_Farming_Game_7
+  - first:
+      213: 6622871750420036914
+    second: Woman_Character_Farming_Game_8
+  - first:
+      213: 3604914178297640503
+    second: Woman_Character_Farming_Game_9
+  - first:
+      213: -438383413310407334
+    second: Woman_Character_Farming_Game_10
+  - first:
+      213: 3385563108539339602
+    second: Woman_Character_Farming_Game_11
+  - first:
+      213: -7511719453953426794
+    second: Woman_Character_Farming_Game_12
+  - first:
+      213: -5360160905827531850
+    second: Woman_Character_Farming_Game_13
+  - first:
+      213: 8911226244451718971
+    second: Woman_Character_Farming_Game_14
+  - first:
+      213: 5395589016825065181
+    second: Woman_Character_Farming_Game_15
+  - first:
+      213: 8198541441427025099
+    second: Woman_Character_Farming_Game_16
+  - first:
+      213: 3546607587367502260
+    second: Woman_Character_Farming_Game_17
+  - first:
+      213: -3021374599390078056
+    second: Woman_Character_Farming_Game_18
+  - first:
+      213: -1757872475478225415
+    second: Woman_Character_Farming_Game_19
+  - first:
+      213: -8333989751102402346
+    second: Woman_Character_Farming_Game_20
+  - first:
+      213: 3281437136175463259
+    second: Woman_Character_Farming_Game_21
+  - first:
+      213: 4073450780130649373
+    second: Woman_Character_Farming_Game_22
+  - first:
+      213: 2181405229944986952
+    second: Woman_Character_Farming_Game_23
+  - first:
+      213: 3033170928193854195
+    second: Woman_Character_Farming_Game_24
+  - first:
+      213: -8333720684592017812
+    second: Woman_Character_Farming_Game_25
+  - first:
+      213: -3761434539582707137
+    second: Woman_Character_Farming_Game_26
+  - first:
+      213: -6831408654524648614
+    second: Woman_Character_Farming_Game_27
+  - first:
+      213: -6827425369566415402
+    second: Woman_Character_Farming_Game_28
+  - first:
+      213: -3041402190445141626
+    second: Woman_Character_Farming_Game_29
+  - first:
+      213: -8620056430084084570
+    second: Woman_Character_Farming_Game_30
+  - first:
+      213: -1299907362997796700
+    second: Woman_Character_Farming_Game_31
+  - first:
+      213: 8095886075647104197
+    second: Woman_Character_Farming_Game_32
+  - first:
+      213: 2895486629931776294
+    second: Woman_Character_Farming_Game_33
+  - first:
+      213: -2062757789420046176
+    second: Woman_Character_Farming_Game_34
+  - first:
+      213: -4626242702671867777
+    second: Woman_Character_Farming_Game_35
+  - first:
+      213: 7461342677418038497
+    second: Woman_Character_Farming_Game_36
+  - first:
+      213: -7852908148138019230
+    second: Woman_Character_Farming_Game_37
+  - first:
+      213: 5646576032948764320
+    second: Woman_Character_Farming_Game_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_0
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 2658
+        width: 197
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6712c17366789fc0800000000000000
+      internalID: -3487907741916063891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_1
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 2658
+        width: 197
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d8e565649cdc6b0800000000000000
+      internalID: -5274338284647051970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_2
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 2660
+        width: 197
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b535452c2bd295ec0800000000000000
+      internalID: -3577778183181413541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_3
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 2658
+        width: 197
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fff41d4f24ca1380800000000000000
+      internalID: -8999665197910786062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_4
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 2681
+        width: 197
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55bfa021649e3830800000000000000
+      internalID: 4052839859561149786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_5
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 2681
+        width: 197
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cef15013054ad0e0800000000000000
+      internalID: -2244405584829743424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_6
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 2682
+        width: 197
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aea0be0cb6ca4a20800000000000000
+      internalID: 3047466608872173217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_7
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 2170
+        width: 197
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f5634d56c6d8030800000000000000
+      internalID: 3498571670144573318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_8
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 2170
+        width: 197
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d71cc74ca29eb50800000000000000
+      internalID: 6622871750420036914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_9
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 2156
+        width: 197
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7363333785a370230800000000000000
+      internalID: 3604914178297640503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_10
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 2172
+        width: 197
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5db536bb9c8ae9f0800000000000000
+      internalID: -438383413310407334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_11
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 2158
+        width: 197
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2539721b5bfebfe20800000000000000
+      internalID: 3385563108539339602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_12
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 2170
+        width: 162
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69af6b694f201c790800000000000000
+      internalID: -7511719453953426794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_13
+      rect:
+        serializedVersion: 2
+        x: 3291
+        y: 2171
+        width: 162
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3c6353e02ec95b0800000000000000
+      internalID: -5360160905827531850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_14
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1651
+        width: 160
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37dead3e090bab70800000000000000
+      internalID: 8911226244451718971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1651
+        width: 160
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde6bddaf9bf0ea40800000000000000
+      internalID: 5395589016825065181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_16
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 1654
+        width: 160
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcca394d00217c170800000000000000
+      internalID: 8198541441427025099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_17
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1620
+        width: 197
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1ceba5fc4183130800000000000000
+      internalID: 3546607587367502260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_18
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 1620
+        width: 197
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b57fd4fcbe116d0800000000000000
+      internalID: -3021374599390078056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_19
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 1643
+        width: 260
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd0fa21c48ca97e0800000000000000
+      internalID: -1757872475478225415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_20
+      rect:
+        serializedVersion: 2
+        x: 3209
+        y: 1643
+        width: 257
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d09bcb0a78b75c80800000000000000
+      internalID: -8333989751102402346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_21
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1124
+        width: 260
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b738680b10a8d20800000000000000
+      internalID: 3281437136175463259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_22
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1124
+        width: 257
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15a9b707edc78830800000000000000
+      internalID: 4073450780130649373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_23
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 1101
+        width: 197
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ddc02cf78e54e10800000000000000
+      internalID: 2181405229944986952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_24
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 1059
+        width: 197
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa590683ecf71a20800000000000000
+      internalID: 3033170928193854195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_25
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 1124
+        width: 243
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e4199f03da85c80800000000000000
+      internalID: -8333720684592017812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_26
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 1157
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3aa9461733bccbc0800000000000000
+      internalID: -3761434539582707137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_27
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 1144
+        width: 380
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a537787e506f131a0800000000000000
+      internalID: -6831408654524648614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_28
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 1124
+        width: 243
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5f084bccc1041a0800000000000000
+      internalID: -6827425369566415402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_29
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 625
+        width: 380
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6812c6362d4cac5d0800000000000000
+      internalID: -3041402190445141626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_30
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 638
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac240d09586f5880800000000000000
+      internalID: -8620056430084084570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_31
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 618
+        width: 160
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a00a9bf32dc5fde0800000000000000
+      internalID: -1299907362997796700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_32
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 527
+        width: 160
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c41af0fd7d5a5070800000000000000
+      internalID: 8095886075647104197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_33
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 582
+        width: 197
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629f9fcbfb5de2820800000000000000
+      internalID: 2895486629931776294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_34
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 572
+        width: 197
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8b2ff28bc9f53e0800000000000000
+      internalID: -2062757789420046176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_35
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 605
+        width: 248
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f701086d5c84ccfb0800000000000000
+      internalID: -4626242702671867777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_36
+      rect:
+        serializedVersion: 2
+        x: 3223
+        y: 595
+        width: 243
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4d6fa12a30c8760800000000000000
+      internalID: 7461342677418038497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_37
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 88
+        width: 248
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266767055add40390800000000000000
+      internalID: -7852908148138019230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Woman_Character_Farming_Game_38
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 77
+        width: 243
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae35213cfaac5e40800000000000000
+      internalID: 5646576032948764320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Woman_Character_Farming_Game_0: -3487907741916063891
+      Woman_Character_Farming_Game_1: -5274338284647051970
+      Woman_Character_Farming_Game_10: -438383413310407334
+      Woman_Character_Farming_Game_11: 3385563108539339602
+      Woman_Character_Farming_Game_12: -7511719453953426794
+      Woman_Character_Farming_Game_13: -5360160905827531850
+      Woman_Character_Farming_Game_14: 8911226244451718971
+      Woman_Character_Farming_Game_15: 5395589016825065181
+      Woman_Character_Farming_Game_16: 8198541441427025099
+      Woman_Character_Farming_Game_17: 3546607587367502260
+      Woman_Character_Farming_Game_18: -3021374599390078056
+      Woman_Character_Farming_Game_19: -1757872475478225415
+      Woman_Character_Farming_Game_2: -3577778183181413541
+      Woman_Character_Farming_Game_20: -8333989751102402346
+      Woman_Character_Farming_Game_21: 3281437136175463259
+      Woman_Character_Farming_Game_22: 4073450780130649373
+      Woman_Character_Farming_Game_23: 2181405229944986952
+      Woman_Character_Farming_Game_24: 3033170928193854195
+      Woman_Character_Farming_Game_25: -8333720684592017812
+      Woman_Character_Farming_Game_26: -3761434539582707137
+      Woman_Character_Farming_Game_27: -6831408654524648614
+      Woman_Character_Farming_Game_28: -6827425369566415402
+      Woman_Character_Farming_Game_29: -3041402190445141626
+      Woman_Character_Farming_Game_3: -8999665197910786062
+      Woman_Character_Farming_Game_30: -8620056430084084570
+      Woman_Character_Farming_Game_31: -1299907362997796700
+      Woman_Character_Farming_Game_32: 8095886075647104197
+      Woman_Character_Farming_Game_33: 2895486629931776294
+      Woman_Character_Farming_Game_34: -2062757789420046176
+      Woman_Character_Farming_Game_35: -4626242702671867777
+      Woman_Character_Farming_Game_36: 7461342677418038497
+      Woman_Character_Farming_Game_37: -7852908148138019230
+      Woman_Character_Farming_Game_38: 5646576032948764320
+      Woman_Character_Farming_Game_4: 4052839859561149786
+      Woman_Character_Farming_Game_5: -2244405584829743424
+      Woman_Character_Farming_Game_6: 3047466608872173217
+      Woman_Character_Farming_Game_7: 3498571670144573318
+      Woman_Character_Farming_Game_8: 6622871750420036914
+      Woman_Character_Farming_Game_9: 3604914178297640503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

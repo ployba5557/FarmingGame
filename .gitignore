@@ -1,0 +1,51 @@
+# Unity Generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]serSettings/
+
+# Unity Cache / Auto-generated
+Library/PackageCache/
+Library/ShaderCache/
+Library/ArtifactDB/
+*.unitypackage
+
+# IDE files
+.vscode/
+.idea/
+.vs/
+*.sln
+*.csproj
+*.pidb
+*.user
+*.booproj
+*.svd
+*.suo
+*.code-workspace
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs & Debug
+sysinfo.txt
+*.stacktrace
+
+# Unity Collab
+.collab/
+
+# Temp & backup files
+*.bak
+*.tmp
+*.temp
+
+# Git LFS (optional if used)
+*.lfs
+
+# Addressables (optional if used)
+Assets/AddressableAssetsData/*/Build*/**
+Assets/AddressableAssetsData/*/AssetBundleBuilds/**
